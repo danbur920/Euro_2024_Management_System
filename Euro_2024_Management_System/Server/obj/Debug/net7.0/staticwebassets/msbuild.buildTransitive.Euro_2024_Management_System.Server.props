@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Euro_2024_Management_System.Server.props" />
+</Project>

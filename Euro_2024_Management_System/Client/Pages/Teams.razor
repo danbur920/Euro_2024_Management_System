@@ -1,0 +1,65 @@
+﻿@page "/teams"
+@using Euro_2024_Management_System.Client.Components
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+@inject HttpClient Http
+
+<h3>Grupy: </h3>
+
+<div>
+    <h4>Grupa A</h4>
+    <GroupTable Teams="@GroupA" />
+</div>
+
+<div>
+    <h4>Grupa B</h4>
+    <GroupTable Teams="@GroupB" />
+</div>
+
+<div>
+    <h4>Grupa C</h4>
+    <GroupTable Teams="@GroupC" />
+</div>
+
+<div>
+    <h4>Grupa D</h4>
+    <GroupTable Teams="@GroupD" />
+</div>
+
+<div>
+    <h4>Grupa E</h4>
+    <GroupTable Teams="@GroupE" />
+</div>
+
+<div>
+    <h4>Grupa F</h4>
+    <GroupTable Teams="@GroupF" />
+</div>
+
+@code {
+    private Team[] GroupA;
+    private Team[] GroupB;
+    private Team[] GroupC;
+    private Team[] GroupD;
+    private Team[] GroupE;
+    private Team[] GroupF;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            GroupA = await Http.GetFromJsonAsync<Team[]>("api/team/group/A");
+            GroupB = await Http.GetFromJsonAsync<Team[]>("api/team/group/B");
+            GroupC = await Http.GetFromJsonAsync<Team[]>("api/team/group/C");
+            GroupD = await Http.GetFromJsonAsync<Team[]>("api/team/group/D");
+            GroupE = await Http.GetFromJsonAsync<Team[]>("api/team/group/E");
+            GroupF = await Http.GetFromJsonAsync<Team[]>("api/team/group/F");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error fetching teams: " + ex.Message);
+        }
+    }
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Euro_2024_Management_System.Client.props" />
+</Project>

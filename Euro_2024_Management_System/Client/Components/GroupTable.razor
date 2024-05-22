@@ -1,0 +1,41 @@
+﻿@using Euro_2024_Management_System.Shared.Models
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Reprezentacja</th>
+            <th>Mecze</th>
+            <th>Wygrane</th>
+            <th>Remisy</th>
+            <th>Przegrane</th>
+            <th>Zdobyte bramki</th>
+            <th>Stracone bramki</th>
+            <th>Bilans bramkowy</th>
+            <th>Punkty</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Teams != null)
+        {
+            @foreach (var team in Teams)
+            {
+                <tr>
+                    <td>@team.Name</td>
+                    <td>@(team.Wins + @team.Draws + @team.Losses)</td>
+                    <td>@team.Wins</td>
+                    <td>@team.Draws</td>
+                    <td>@team.Losses</td>
+                    <td>@team.GoalsScored</td>
+                    <td>@team.GoalsConceded</td>
+                    <td>@team.GoalBalance</td>
+                    <td>@team.Points</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public Team[] Teams { get; set; }
+}
