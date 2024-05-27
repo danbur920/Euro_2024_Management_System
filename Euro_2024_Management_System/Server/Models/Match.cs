@@ -13,6 +13,7 @@ namespace Euro_2024_Management_System.Server.Models
         public int AwayTeamId { get; set; }
         public int Round { get; set; }
         public DateTime MatchDate { get; set; }
+        public TimeSpan MatchTime { get; set; }
         public int? GoalsHome { get; set; }
         public int? GoalsAway { get; set; }
         public int? GoalsCount { get; set; }
@@ -21,5 +22,10 @@ namespace Euro_2024_Management_System.Server.Models
         public virtual Team? HomeTeam { get; set; }
         public virtual Team? AwayTeam { get; set; }
         public virtual ICollection<Bet>? Bets { get; set; }
+
+        public Match()
+        {
+            IsFinished = false;
+        }
     }
 }

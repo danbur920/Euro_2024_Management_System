@@ -26,24 +26,48 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/BetDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCZXREaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/BetTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCZXRUYWJsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/GroupTable.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcm91cFRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/MatchTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXRjaFRhYmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Authentication.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Bets.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmV0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Matches.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0Y2hlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederBets.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VlZGVyQmV0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederMatch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VlZGVyTWF0Y2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederUserProperties.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VlZGVyVXNlclByb3BlcnRpZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Table.razor]
@@ -52,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Teams.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/TestPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/LoginDisplay.razor]

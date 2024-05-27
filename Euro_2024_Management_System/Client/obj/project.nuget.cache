@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2U+43LIhOoTvFFn6PZBNTNtndQstiO8GWdt4DtADOOIwcDwyK/+XxRQ0MNt1HnKZoxqyGEq9I5Yi2tlYBsh+Yg==",
+  "dgSpecHash": "Adik6lH49k09igCjiCkFvjIbEeVcwh+4h2hYw3SCZmcjMwfdclUZSSLc4RnSDyygfx36w1qj0mS9W40fR0scUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\blazored.modal.7.2.0.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.13\\microsoft.aspnetcore.components.7.0.13.nupkg.sha512",
     "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.13\\microsoft.aspnetcore.components.analyzers.7.0.13.nupkg.sha512",

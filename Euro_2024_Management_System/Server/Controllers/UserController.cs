@@ -13,10 +13,12 @@ namespace Euro_2024_Management_System.Server.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
-        public UserController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
+        private readonly RoleManager<IdentityRole> _roleManager;
+        public UserController(ApplicationDbContext context, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _context = context;
             _userManager = userManager;
+            _roleManager = roleManager;
         }
 
         [HttpGet]
@@ -37,15 +39,52 @@ namespace Euro_2024_Management_System.Server.Controllers
             return Ok(user);
         }
 
+        //[HttpPost]
+        //public async Task<IActionResult> CreateUser(ApplicationUser user)
+        //{
+        //    var result = await _userManager.CreateAsync(user, "DefaultPassword123!");
+        //    if (result.Succeeded)
+        //    {
+        //        return Ok(user);
+        //    }
+        //    return BadRequest(result.Errors);
+        //}
+
         [HttpPost]
-        public async Task<IActionResult> CreateUser(ApplicationUser user)
+        public async Task<IActionResult> UpdateUser(ApplicationUser updatedUser)
         {
-            var result = await _userManager.CreateAsync(user, "DefaultPassword123!");
-            if (result.Succeeded)
+            var existingUser = await _userManager.FindByIdAsync(updatedUser.Id);
+
+            if (existingUser == null)
             {
-                return Ok(user);
+                return NotFound("Użytkownik nie istnieje.");
             }
-            return BadRequest(result.Errors);
+
+            if (await _roleManager.RoleExistsAsync("Gracz"))
+            {
+                var roles = await _userManager.GetRolesAsync(existingUser);
+                await _userManager.RemoveFromRolesAsync(existingUser, roles.ToArray());
+
+                await _userManager.AddToRoleAsync(existingUser, "Gracz");
+            }
+            else
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Rola 'Gracz' nie istnieje.");
+            }
+
+            // Aktualizujemy pozostałe właściwości użytkownika
+            existingUser.FirstName = "Nastia";
+            existingUser.LastName = "Bura";
+            existingUser.Age = 5;
+
+            var updateResult = await _userManager.UpdateAsync(existingUser);
+
+            if (!updateResult.Succeeded)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, "Nie udało się zaktualizować danych użytkownika.");
+            }
+
+            return Ok(existingUser);
         }
     }
 }

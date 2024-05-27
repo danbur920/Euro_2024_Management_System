@@ -1,0 +1,160 @@
+﻿@page "/bets"
+@using Blazored.Modal
+@using Blazored.Modal.Services
+@using Euro_2024_Management_System.Client.Components
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Linq
+
+@inject HttpClient Http
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IModalService Modal
+
+<h3>Twoje typy:</h3>
+
+@if (Matches != null && Bets_ != null && Teams != null && User != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Kolejka</th>
+                <th>Mecz</th>
+                <th>Rezultat</th>
+                <th>Obstaw mecz</th>
+                <th>Twój typ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var match in Matches)
+            {
+                <tr>
+                    <td>@match.Round</td>
+                    <td>@($"{Teams.FirstOrDefault(t => t.Id == match.HomeTeamId)?.Name} - {Teams.FirstOrDefault(t => t.Id == match.AwayTeamId)?.Name}")</td>
+                    <td>@ReturnResult(match)</td>
+                    <td>
+                        @if (!(returnBet(match).GoalsAway != null && returnBet(match).GoalsHome != null && returnBet(match).GoalsCount != null && returnBet(match).MatchBet != null) || betAgain)
+                        {
+                            @if (returnBet(match) != null)
+                            {
+                                <EditForm Model="returnBet(match)" OnValidSubmit="() => HandleValidSubmit(returnBet(match))">
+                                    <DataAnnotationsValidator />
+                                    <ValidationSummary />
+
+                                    <div>
+                                        <label>Gole gospodarzy:</label>
+                                        <InputNumber @bind-Value="returnBet(match).GoalsHome" />
+                                    </div>
+                                    <div>
+                                        <label>Gole gości:</label>
+                                        <InputNumber @bind-Value="returnBet(match).GoalsAway" />
+                                    </div>
+                                    <div>
+                                        <label>Typ:</label>
+                                        <InputSelect @bind-Value="returnBet(match).MatchBet">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="0">0</option>
+                                            <option value="12">12</option>
+                                            <option value="10">10</option>
+                                            <option value="02">02</option>
+                                        </InputSelect>
+                                    </div>
+                                    <div>
+                                        <label>Ilość goli:</label>
+                                        <InputNumber @bind-Value="returnBet(match).GoalsCount" />
+                                    </div>
+                                    <button type="submit">Zatwierdź</button>
+                                </EditForm>
+                            }
+                            else
+                            {
+                                <p>Brak zakładu dla tego meczu.</p>
+                            }
+                        }
+                        else
+                        {
+                            <p>Zakład obstawiony</p>
+                            <button @onclick="()=>changeBetAgain()">Obstaw jeszcze raz</button>
+                        }
+                    </td>
+                    <td>
+                        <p>@returnBet(match).Id</p>
+                        <p>Typ: @returnBet(match).MatchBet</p>
+                        <p>Wynik: @returnBet(match).GoalsHome:@returnBet(match).GoalsAway</p>
+                        <p>Ilość goli: @returnBet(match).GoalsCount</p>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Team[] Teams;
+    private Match[] Matches;
+    private Bet[] Bets_;
+    private ApplicationUser User;
+    private bool betAgain = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshData();
+    }
+
+    private async Task RefreshData()
+    {
+        try
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+            var userId = user.FindFirst(c => c.Type == "sub")?.Value;
+            Teams = await Http.GetFromJsonAsync<Team[]>("api/team");
+            Matches = await Http.GetFromJsonAsync<Match[]>("api/match");
+            Bets_ = await Http.GetFromJsonAsync<Bet[]>($"api/bet/user/{userId}");
+            User = await Http.GetFromJsonAsync<ApplicationUser>($"api/user/{userId}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error fetching data: " + ex.Message);
+        }
+    }
+
+    private void changeBetAgain()
+    {
+        betAgain = !betAgain;
+    }
+
+    private string ReturnResult(Match match)
+    {
+        if (match.GoalsHome == null || match.GoalsAway == null)
+            return "-";
+
+        var homeTeam = Teams.FirstOrDefault(t => t.Id == match.HomeTeamId)?.Name;
+        var awayTeam = Teams.FirstOrDefault(t => t.Id == match.AwayTeamId)?.Name;
+
+        return match.GoalsHome == match.GoalsAway ? "REMIS" : (match.GoalsHome > match.GoalsAway ? $"{homeTeam.ToUpper()}" : $"{awayTeam.ToUpper()}");
+    }
+
+    private Bet returnBet(Match match)
+    {
+        var betToReturn = Bets_.FirstOrDefault(x => x.MatchId == match.Id && x.UserId == User.Id);
+        return betToReturn ?? new Bet { MatchId = match.Id, UserId = User.Id }; // Zwróć nowy obiekt Bet, jeśli nie znaleziono istniejącego zakładu
+    }
+
+    private async Task HandleValidSubmit(Bet bet)
+    {
+        bet.BetDate = DateTime.Now;
+        var response = await Http.PutAsJsonAsync($"api/bet/{bet.Id}", bet);
+        if (response.IsSuccessStatusCode)
+        {
+            betAgain = !betAgain;
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine("Błąd podczas aktualizacji zakładu");
+        }
+    }
+}

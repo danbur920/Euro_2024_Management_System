@@ -1,0 +1,46 @@
+﻿@using Blazored.Modal
+@using Blazored.Modal.Services
+@using Euro_2024_Management_System.Shared.Models
+
+<EditForm Model="@Bet" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>Gole gospodarzy:</label>
+        <InputNumber @bind-Value="Bet.GoalsHome" />
+    </div>
+    <div>
+        <label>Gole gości:</label>
+        <InputNumber @bind-Value="Bet.GoalsAway" />
+    </div>
+    <div>
+        <label>Typ:</label>
+        <InputSelect @bind-Value="Bet.MatchBet">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=0>0</option>
+            <option value=12>12</option>
+            <option value=10>10</option>
+            <option value=02>02</option>
+        </InputSelect>
+    </div>
+    <div>
+        <label>Ilość goli:</label>
+        <InputNumber @bind-Value="Bet.GoalsCount" />
+    </div>
+    <button type="submit">Zatwierdź</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public Bet Bet { get; set; }
+
+    [Parameter]
+    public EventCallback<Bet> OnBetSubmitted { get; set; }
+
+    private async Task HandleValidSubmit()
+    {
+        await OnBetSubmitted.InvokeAsync(Bet);
+    }
+}

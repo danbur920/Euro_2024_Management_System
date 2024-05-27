@@ -1,0 +1,85 @@
+﻿@page "/seeder"
+
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Globalization
+
+@inject HttpClient Http
+
+<h3>Wstaw mecz</h3>
+
+<EditForm Model="@newMatch" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label for="homeTeamId">ID Drużyna Gospodarzy:</label>
+        <select id="homeTeamId" @bind="newMatch.HomeTeamId">
+            <option value="">Wybierz drużynę</option>
+            @foreach (var team in teams)
+            {
+                <option value="@team.Id">@team.Name</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label for="awayTeamId">ID Drużyna Gości:</label>
+        <select id="awayTeamId" @bind="newMatch.AwayTeamId">
+            <option value="">Wybierz drużynę</option>
+            @foreach (var team in teams)
+            {
+                <option value="@team.Id">@team.Name</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label>Runda:</label>
+        <InputNumber @bind-Value="newMatch.Round" />
+    </div>
+    <div>
+        <label>Data Meczu:</label>
+        <InputDate @bind-Value="newMatch.MatchDate" />
+    </div>
+    <div>
+        <label for="matchTime">Godzina Meczu:</label>
+        <input type="text" id="matchTime" @bind="matchTimeString" />
+    </div>
+    <div>
+        <label>Czy zakończony:</label>
+        <InputCheckbox @bind-Value="newMatch.IsFinished" />
+    </div>
+@*     <div>
+        <button type="submit">Dodaj mecz</button>
+    </div> *@
+</EditForm>
+
+
+
+@code {
+    private Match newMatch = new Match();
+    private List<Team> teams = new List<Team>();
+
+    private string matchTimeString = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        teams = await Http.GetFromJsonAsync<List<Team>>("api/team");
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        newMatch.MatchTime = TimeSpan.Parse(matchTimeString);
+        var response = await Http.PostAsJsonAsync("api/match", newMatch);
+
+        if (response.IsSuccessStatusCode)
+        {
+            newMatch = new Match() { MatchDate = new DateTime(2024, 06, 15) };
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine("Błąd podczas dodawania meczu");
+        }
+    }
+}

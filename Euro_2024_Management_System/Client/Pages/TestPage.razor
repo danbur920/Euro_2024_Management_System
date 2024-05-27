@@ -1,0 +1,81 @@
+﻿@page "/testPage"
+@using Euro_2024_Management_System.Client.Components
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+@inject HttpClient Http
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<h3>Twoje typy:</h3>
+
+@if (Teams != null)
+{
+    <div>
+        <h4>Teams:</h4>
+        @foreach (var team in Teams)
+        {
+            <p>@team.Name</p>
+        }
+    </div>
+}
+
+@if (Matches != null)
+{
+    <div>
+        <h4>Matches:</h4>
+        @foreach (var match in Matches)
+        {
+            <p>@match.Id</p>
+        }
+    </div>
+}
+
+@if (Bets_ != null)
+{
+    <div>
+        <h4>Bets:</h4>
+        @foreach (var bet in Bets_)
+        {
+            <p>Id zakładu: @bet.Id</p>
+            <p>Id gracza: @bet.UserId</p>
+            <p>Id meczu: @bet.MatchId</p>
+        }
+    </div>
+}
+
+@if (User != null)
+{
+    <div>
+        <h4>User:</h4>
+        <p>@User.Id</p>
+        <p>@User.FirstName</p>
+        <p>@User.LastName</p>
+    </div>
+}
+
+@code {
+    private Team[] Teams;
+    private Match[] Matches;
+    private Bet[] Bets_;
+    private ApplicationUser User;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+            var userId = user.FindFirst(c => c.Type == "sub")?.Value;
+
+            Bets_ = await Http.GetFromJsonAsync<Bet[]>($"api/bet/user/{userId}");
+            User = await Http.GetFromJsonAsync<ApplicationUser>($"api/user/{userId}");
+            Teams = await Http.GetFromJsonAsync<Team[]>("api/team");
+            Matches = await Http.GetFromJsonAsync<Match[]>("api/match");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error fetching data: " + ex.Message);
+        }
+    }
+}

@@ -1,0 +1,71 @@
+﻿@page "/seederBets"
+
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Globalization
+
+@inject HttpClient Http
+
+<h3>Wstaw mecz</h3>
+
+@if (Matches != null && Teams != null && Users != null)
+{
+    <div>
+        
+    </div>
+}
+else
+{
+    <p>Brak danych.</p>
+}
+
+
+@code {
+    private List<Match> Matches = new List<Match>();
+    private List<Team> Teams = new List<Team>();
+    private List<ApplicationUser> Users = new List<ApplicationUser>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Teams = await Http.GetFromJsonAsync<List<Team>>("api/team");
+        Matches = await Http.GetFromJsonAsync<List<Match>>("api/match");
+        Users = await Http.GetFromJsonAsync<List<ApplicationUser>>("api/user");
+    }
+
+    private async Task AddBets()
+    {
+        for (int i = 0; i < Users.Count; i++)
+        {
+            var userId = Users[i].Id;
+            for (int j = 0; j < Matches.Count; j++)
+            {
+                var matchId = Matches[j].Id;
+                var newBet = new Bet() { MatchId = matchId, UserId = userId };
+                var response = await Http.PostAsJsonAsync("api/bet", newBet);
+
+                if (response.IsSuccessStatusCode)
+                    Console.WriteLine($"Dodano zakład o MatchId: {matchId} oraz UserId: {userId}");
+                else
+                    Console.WriteLine($"Wystąpił problem z dodaniem zakładu.");
+            }
+        }
+    }
+
+    // private async Task HandleValidSubmit()
+    // {
+    //     newMatch.MatchTime = TimeSpan.Parse(matchTimeString);
+    //     var response = await Http.PostAsJsonAsync("api/match", newMatch);
+
+    //     if (response.IsSuccessStatusCode)
+    //     {
+    //         newMatch = new Match() { MatchDate = new DateTime(2024, 06, 15) };
+    //         StateHasChanged();
+    //     }
+    //     else
+    //     {
+    //         Console.WriteLine("Błąd podczas dodawania meczu");
+    //     }
+    // }
+}

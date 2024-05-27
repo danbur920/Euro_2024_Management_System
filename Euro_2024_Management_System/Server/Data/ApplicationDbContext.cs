@@ -1,8 +1,10 @@
 ﻿using Duende.IdentityServer.EntityFramework.Options;
 using Euro_2024_Management_System.Server.Models;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Euro_2024_Management_System.Server.Data
 {

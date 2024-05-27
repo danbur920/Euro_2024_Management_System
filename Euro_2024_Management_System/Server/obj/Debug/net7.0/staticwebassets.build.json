@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C+Ow4JUBsz1Ripe1JpgFRG9Eu0XC7jA7idIvHwlkNIg=",
+  "Hash": "47m3Vn4FxpP+8QpZLQvkALP7+1FbjU6KEVgMKC/9uaE=",
   "Source": "Euro_2024_Management_System.Server",
   "BasePath": "_content/Euro_2024_Management_System.Server",
   "Mode": "Default",
@@ -28,6 +28,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\staticwebassets\\Blazored.Modal.bundle.scp.css",
+      "SourceId": "Blazored.Modal",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Modal",
+      "RelativePath": "Blazored.Modal.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\staticwebassets\\Blazored.Modal.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\staticwebassets\\BlazoredModal.razor.js",
+      "SourceId": "Blazored.Modal",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Modal",
+      "RelativePath": "BlazoredModal.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\staticwebassets\\BlazoredModal.razor.js"
+    },
     {
       "Identity": "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\7.0.13\\staticwebassets\\AuthenticationService.js",
       "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
@@ -1224,6 +1262,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Daniel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.13\\build\\net7.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.Modal.dll",
+      "SourceId": "Euro_2024_Management_System.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Modal.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Daniel\\.nuget\\packages\\blazored.modal\\7.2.0\\lib\\net6.0\\Blazored.Modal.dll"
     },
     {
       "Identity": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.15.l1lgv8x0eo.js",
@@ -8522,6 +8579,25 @@
       "OriginalItemSpec": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
+      "Identity": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\obj\\Debug\\net7.0\\compressed\\uhky0wskw4.gz",
+      "SourceId": "Euro_2024_Management_System.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.Modal.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.Modal.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.Modal.dll"
+    },
+    {
       "Identity": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\obj\\Debug\\net7.0\\compressed\\ukltrn4vrr.gz",
       "SourceId": "Euro_2024_Management_System.Client",
       "SourceType": "Project",
@@ -9508,6 +9584,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Euro_2024_Management_System.Server.styles.css",
+      "SourceId": "Euro_2024_Management_System.Server",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/Euro_2024_Management_System.Server",
+      "RelativePath": "Euro_2024_Management_System.Server.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\obj\\Debug\\net7.0\\scopedcss\\bundle\\Euro_2024_Management_System.Server.styles.css"
     }
   ]
 }

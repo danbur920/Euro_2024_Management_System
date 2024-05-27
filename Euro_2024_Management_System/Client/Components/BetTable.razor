@@ -1,0 +1,103 @@
+﻿@using Blazored.Modal
+@using Blazored.Modal.Services
+@using Euro_2024_Management_System.Shared.Models
+@inject HttpClient Http
+@inject IModalService Modal
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Kolejka</th>
+            <th>Mecz</th>
+@*             <th>Typ</th>
+            <th>Ilość goli</th>
+            <th>Wynik</th> *@
+            <th>Rezultat</th>
+            <th>Zdobyte punkty</th>
+            <th>Obstaw</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Matches != null && Bets != null && User != null && Teams != null)
+        {
+            for (int i = 0; i < Matches.Length; i++)
+            {
+                <tr>
+                    <td>@Matches[i].Round</td>
+                    <td>@ShowOpponents(Matches[i].HomeTeamId, Matches[i].AwayTeamId)</td>
+                    <td>@ReturnResult(Matches[i])</td>
+                    <td>"DO IMPLEMENTACJI"</td>
+@*                     <td>
+                        @if (Bets.Length > i && Bets[i] != null)
+                        {
+                            <button @onclick="() => OpenBetDialog(Bets[i])">Obstaw</button>
+                        }
+                        else
+                        {
+                            <button disabled>Brak danych</button>
+                        }
+                    </td> *@
+                    <td>
+                        <EditForm>
+
+                        </EditForm>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public Match[] Matches { get; set; }
+    [Parameter]
+    public Team[] Teams { get; set; }
+    [Parameter]
+    public Bet[] Bets { get; set; }
+    [Parameter]
+    public ApplicationUser User { get; set; }
+
+    private string ShowOpponents(int homeTeamId, int awayTeamId)
+    {
+        Team homeTeam = Teams.FirstOrDefault(x => x.Id == homeTeamId);
+        Team awayTeam = Teams.FirstOrDefault(x => x.Id == awayTeamId);
+        return $"{homeTeam.Name} - {awayTeam.Name}";
+    }
+
+    private Bet UpdateBet(Bet bet)
+    {
+        return bet;
+    }
+
+    private string ReturnResult(Match match)
+    {
+        var homeTeam = Teams.FirstOrDefault(x => x.Id == match.HomeTeamId);
+        var awayTeam = Teams.FirstOrDefault(x => x.Id == match.AwayTeamId);
+
+        if (match.GoalsHome != null && match.GoalsAway != null)
+        {
+            if (match.GoalsHome == match.GoalsAway)
+                return "REMIS";
+
+            return match.GoalsHome > match.GoalsAway ? $"{(homeTeam.Name).ToUpper()}" : $"{(awayTeam.Name).ToUpper()}";
+        }
+        return "-";
+    }
+
+    private async Task OpenBetDialog(Bet bet)
+    {
+        var parameters = new ModalParameters();
+        parameters.Add(nameof(BetDialog.Bet), bet);
+
+        var formModal = Modal.Show<BetDialog>("Obstaw wynik", parameters);
+        var result = await formModal.Result;
+
+        if (!result.Cancelled)
+        {
+            Bet updatedBet = result.Data as Bet;
+            // Update the bet in the list (this could involve making an API call to save changes)
+        }
+    }
+}

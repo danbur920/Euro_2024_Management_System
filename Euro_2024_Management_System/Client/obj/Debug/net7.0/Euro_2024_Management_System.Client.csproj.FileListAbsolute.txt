@@ -865,3 +865,8 @@ C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Manageme
 C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\obj\Debug\net7.0\compressed\hyd5p5zm9q.gz
 C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\obj\Debug\net7.0\compressed\uw2zghpt4s.gz
 C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\obj\Debug\net7.0\compressed\hnvisud6qa.gz
+C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\obj\Debug\net7.0\Euro_2024_Management_System.Client.sourcelink.json
+C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll
+C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll.gz
+C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\bin\Debug\net7.0\Blazored.Modal.dll
+C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\obj\Debug\net7.0\compressed\uhky0wskw4.gz

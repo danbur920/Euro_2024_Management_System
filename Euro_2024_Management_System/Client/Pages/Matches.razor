@@ -1,0 +1,51 @@
+﻿@page "/matches"
+@using Euro_2024_Management_System.Client.Components
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@attribute [Authorize]
+@inject HttpClient Http
+
+<h3 style="text-align: center">Wyniki: </h3>
+
+<div>
+    <h4 style="text-align:center">1 kolejka</h4>
+    <MatchTable Matches="MatchesRound1"
+                Teams="AllTeams" />
+</div>
+
+<div>
+    <h4 style="text-align:center">2 kolejka</h4>
+    <MatchTable Matches="MatchesRound2"
+                Teams="AllTeams" />
+</div>
+
+<div>
+    <h4 style="text-align:center">3 kolejka</h4>
+    <MatchTable Matches="MatchesRound3"
+                Teams="AllTeams" />
+</div>
+
+
+@code {
+    private Match[] MatchesRound1;
+    private Match[] MatchesRound2;
+    private Match[] MatchesRound3;
+    private Team[] AllTeams;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            MatchesRound1 = await Http.GetFromJsonAsync<Match[]>("api/match/round/1");
+            MatchesRound2 = await Http.GetFromJsonAsync<Match[]>("api/match/round/2");
+            MatchesRound3 = await Http.GetFromJsonAsync<Match[]>("api/match/round/3");
+
+            AllTeams = await Http.GetFromJsonAsync<Team[]>("api/team");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error fetching teams: " + ex.Message);
+        }
+    }
+}

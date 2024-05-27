@@ -1,0 +1,50 @@
+﻿@using Euro_2024_Management_System.Shared.Models
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Gospodarz</th>
+            <th>Gość</th>
+            <th>Data</th>
+            <th>Godzina</th>
+            <th>Wynik</th>
+            <th>Rezultat</th>
+            <th>Czy zakończony?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Matches != null)
+        {
+            @foreach (var match in Matches)
+            {
+                <tr>
+                    <td>@ReturnTeamName(match.HomeTeamId)</td>
+                    <td>@ReturnTeamName(match.AwayTeamId)</td>
+                    <td>@match.MatchDate.ToString("dd.MM.yyyy")</td>
+                    <td>@match.MatchTime.ToString(@"hh\:mm")</td>
+                    <td>@ReturnScore(match.GoalsHome, match.GoalsAway)</td>      
+                    <td>@match.Result</td>
+                    <td>@(match.IsFinished ? "Tak" : "Nie")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public Match[] Matches { get; set; }
+    [Parameter]
+    public Team[] Teams { get; set; }
+
+    private string ReturnScore(int? homeGoals, int? awayGoals)
+    {
+        return $"{homeGoals}:{awayGoals}";
+    }
+
+    private string ReturnTeamName(int id)
+    {
+        var team = Teams.FirstOrDefault(x => x.Id == id);
+        return team?.Name ?? "Nieznany";
+    }
+}

@@ -254,22 +254,25 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("BetDate")
+                    b.Property<DateTime?>("BetDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("GoalsAway")
+                    b.Property<int?>("GoalsAway")
                         .HasColumnType("int");
 
-                    b.Property<int>("GoalsCount")
+                    b.Property<int?>("GoalsCount")
                         .HasColumnType("int");
 
-                    b.Property<int>("GoalsHome")
+                    b.Property<int?>("GoalsHome")
                         .HasColumnType("int");
 
-                    b.Property<int>("MatchBet")
+                    b.Property<int?>("MatchBet")
                         .HasColumnType("int");
 
                     b.Property<int>("MatchId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("PointsScored")
                         .HasColumnType("int");
 
                     b.Property<string>("UserId")
@@ -313,6 +316,9 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
 
                     b.Property<DateTime>("MatchDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("MatchTime")
+                        .HasColumnType("time");
 
                     b.Property<int?>("Result")
                         .HasColumnType("int");

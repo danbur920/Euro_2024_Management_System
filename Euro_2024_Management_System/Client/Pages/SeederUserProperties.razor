@@ -1,0 +1,45 @@
+﻿@page "/seederUserProp"
+
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.DependencyInjection
+@inject HttpClient Http
+
+<h3>SeederUserProperties</h3>
+
+@if (user != null)
+{
+    <div>
+        <p>Id: @user.Id</p>
+        <p>Imię: @user.FirstName</p>
+        <p>Nazwisko: @user.LastName</p>
+        <p>Wiek: @user.Age</p>
+    </div>
+}
+else
+{
+    <p>Brak danych użytkownika.</p>
+}
+
+@code {
+    private ApplicationUser user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            user = await Http.GetFromJsonAsync<ApplicationUser>("api/user/b01f1612-05bf-455b-bbd6-22f6df89806e");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error fetching users: " + ex.Message);
+        }
+    }
+
+    private async Task UpdateUserForFetchedUser()
+    {
+        await Http.PostAsJsonAsync("api/user", user);
+        StateHasChanged();
+    }
+}
