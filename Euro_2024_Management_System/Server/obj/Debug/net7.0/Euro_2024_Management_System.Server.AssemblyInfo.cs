@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Euro_2024_Management_System.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c75920dd8c4e557c366db987be2d7e177f12eb25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc005a966e0096cf82563c391031fff763a0b576")]
 [assembly: System.Reflection.AssemblyProductAttribute("Euro_2024_Management_System.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Euro_2024_Management_System.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

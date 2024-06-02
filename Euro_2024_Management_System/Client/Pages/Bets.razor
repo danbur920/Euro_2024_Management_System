@@ -140,7 +140,7 @@
     private Bet returnBet(Match match)
     {
         var betToReturn = Bets_.FirstOrDefault(x => x.MatchId == match.Id && x.UserId == User.Id);
-        return betToReturn ?? new Bet { MatchId = match.Id, UserId = User.Id }; // Zwróć nowy obiekt Bet, jeśli nie znaleziono istniejącego zakładu
+        return betToReturn ?? new Bet { MatchId = match.Id, UserId = User.Id };
     }
 
     private async Task HandleValidSubmit(Bet bet)
