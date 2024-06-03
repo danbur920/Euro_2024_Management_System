@@ -13,95 +13,95 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Euro_2024_Management_System.Client
 build_property.RootNamespace = Euro_2024_Management_System.Client
-build_property.ProjectDir = C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client\
+build_property.ProjectDir = C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Client
+build_property.MSBuildProjectDirectory = C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/App.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/BetDialog.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/BetDialog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCZXREaWFsb2cucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/BetTable.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCZXRUYWJsZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/GroupTable.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/GroupTable.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHcm91cFRhYmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/MatchTable.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Components/MatchTable.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNYXRjaFRhYmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Authentication.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Authentication.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Bets.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Bets.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmV0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Index.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Matches.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Matches.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0Y2hlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederBets.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederBets.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VlZGVyQmV0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederMatch.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederMatch.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VlZGVyTWF0Y2gucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederUserProperties.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/SeederUserProperties.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VlZGVyVXNlclByb3BlcnRpZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Table.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Summarize.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VtbWFyaXplLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Table.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Teams.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/Teams.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/TestPage.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Pages/TestPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdFBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/LoginDisplay.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/RedirectToLogin.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/SurveyPrompt.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/_Imports.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/MainLayout.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-dfcourhvaf
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/NavMenu.razor]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-588qoyfo9f

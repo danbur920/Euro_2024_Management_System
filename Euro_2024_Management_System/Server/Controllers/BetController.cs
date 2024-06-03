@@ -90,5 +90,87 @@ namespace Euro_2024_Management_System.Server.Controllers
         {
             return _context.Bets.Any(e => e.Id == id);
         }
+
+        [HttpPost("summarize")]
+        public async Task<IActionResult> SummarizeBets()
+        {
+            var users = await _context.Users.ToListAsync();
+            var bets = await _context.Bets.ToListAsync();
+            var matches = await _context.Matches.ToListAsync();
+
+            foreach (var user in users)
+            {
+                var userBets = bets.Where(x => x.UserId == user.Id && x.MatchBet != null).ToArray();
+                if (user.Points == null)
+                    user.Points = 0;
+
+                foreach (var bet in userBets)
+                {
+                    var match = matches.FirstOrDefault(x => x.Id == bet.MatchId);
+                    if (match.IsFinished)
+                    {
+                        // Dokładny wynik:
+                        if (bet.GoalsHome == match.GoalsHome && bet.GoalsAway == match.GoalsAway)
+                        {
+                            user.Points += 5;
+                        }
+
+                        // Dokładna ilość goli:
+                        var goalsCount = match.GoalsHome + match.GoalsAway;
+                        if (bet.GoalsCount == goalsCount)
+                        {
+                            user.Points += 2;
+                        }
+
+                        // Remis (0):
+                        if (bet.MatchBet == 0 && match.Result == 0)
+                        {
+                            user.Points += 3;
+                        }
+
+                        // Wygrana gości (1):
+                        if (bet.MatchBet == 1 && match.Result == 1)
+                        {
+                            user.Points += 2;
+                        }
+
+                        // Wygrana gospodarzy (2):
+                        if (bet.MatchBet == 2 && match.Result == 2)
+                        {
+                            user.Points += 2;
+                        }
+
+                        // Podpórka 10:
+                        if (bet.MatchBet == 10)
+                        {
+                            if (!(match.GoalsAway > match.GoalsHome))
+                            {
+                                user.Points += 1;
+                            }
+                        }
+
+                        // Podpórka 02:
+                        if (bet.MatchBet == 02)
+                        {
+                            if (!(match.GoalsAway < match.GoalsHome))
+                            {
+                                user.Points += 1;
+                            }
+                        }
+
+                        // Podpórka 12:
+                        if (bet.MatchBet == 12 && match.Result != 0)
+                        {
+                            user.Points += 1;
+                        }
+                    }
+                }
+
+                _context.Users.Update(user);
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok(new { message = "Zakończono aktualizację" });
+        }
     }
 }

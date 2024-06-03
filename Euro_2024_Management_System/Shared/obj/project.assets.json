@@ -851,29 +851,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
-    "D:\\Visual Udostępnione\\NuGetPackages": {}
+    "C:\\Users\\danbu\\.nuget\\packages\\": {},
+    "C:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj",
+      "projectUniqueName": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj",
       "projectName": "Euro_2024_Management_System.Shared",
-      "projectPath": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj",
-      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\obj\\",
+      "projectPath": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj",
+      "packagesPath": "C:\\Users\\danbu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Visual Udostępnione\\NuGetPackages"
+        "C:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "D:\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\danbu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -886,6 +889,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -912,26 +920,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

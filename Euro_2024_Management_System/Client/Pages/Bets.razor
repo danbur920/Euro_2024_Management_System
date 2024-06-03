@@ -24,6 +24,7 @@
                 <th>Rezultat</th>
                 <th>Obstaw mecz</th>
                 <th>Twój typ</th>
+                <th>Zdobyte punkty</th>
             </tr>
         </thead>
         <tbody>
@@ -76,7 +77,7 @@
                         else
                         {
                             <p>Zakład obstawiony</p>
-                            <button @onclick="()=>changeBetAgain()">Obstaw jeszcze raz</button>
+                            <button class="btn btn-primary" @onclick="()=>changeBetAgain()">Obstaw jeszcze raz</button>
                         }
                     </td>
                     <td>
@@ -85,6 +86,7 @@
                         <p>Wynik: @returnBet(match).GoalsHome:@returnBet(match).GoalsAway</p>
                         <p>Ilość goli: @returnBet(match).GoalsCount</p>
                     </td>
+                    <th>@(returnBet(match).PointsScored == null ? "-" : returnBet(match).PointsScored) </th>
                 </tr>
             }
         </tbody>

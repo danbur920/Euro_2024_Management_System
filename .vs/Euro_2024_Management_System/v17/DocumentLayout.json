@@ -1,0 +1,911 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\controllers\\betcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\controllers\\betcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\summarize.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\summarize.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\bets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\bets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\seederuserproperties.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\seederuserproperties.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\table.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\table.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\matches.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\matches.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\seederbets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\seederbets.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\teams.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\teams.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\seedermatch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\seedermatch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\controllers\\teamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\testpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\testpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\pages\\authentication.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\components\\betdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\components\\betdialog.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\components\\matchtable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\components\\matchtable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\components\\grouptable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\components\\grouptable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\shared\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|solutionrelative:euro_2024_management_system\\shared\\models\\bet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\extensions\\seedroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\extensions\\seedroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\areas\\identity\\pages\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\areas\\identity\\pages\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\shared\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|solutionrelative:euro_2024_management_system\\shared\\models\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\shared\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|solutionrelative:euro_2024_management_system\\shared\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104449_six.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\shared\\logindisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\shared\\logindisplay.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\shared\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\shared\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\shared\\surveyprompt.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\shared\\surveyprompt.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\shared\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{618D6786-3735-4CFD-ADD6-B50B2A34DAC0}|Euro_2024_Management_System\\Shared\\Euro_2024_Management_System.Shared.csproj|solutionrelative:euro_2024_management_system\\shared\\models\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\shared\\navmenu.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\client\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{47849FCC-937E-44C6-B8DD-053761F47983}|Euro_2024_Management_System\\Client\\Euro_2024_Management_System.Client.csproj|solutionrelative:euro_2024_management_system\\client\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240522180329_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240522180329_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240522175712_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240522175712_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\controllers\\oidcconfigurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\controllers\\oidcconfigurationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240522181720_three.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240522181720_three.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240522220039_five.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240522220039_five.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240522205359_four.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240522205359_four.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240523120319_seven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240523120319_seven.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240523104534_six.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240523104534_six.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|c:\\users\\danbu\\desktop\\projekt _ euro 2024 management\\euro_2024_management_system\\euro_2024_management_system\\server\\data\\migrations\\20240525141143_eight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6EE7BD01-63AE-4951-8209-38AEE6E4E49C}|Euro_2024_Management_System\\Server\\Euro_2024_Management_System.Server.csproj|solutionrelative:euro_2024_management_system\\server\\data\\migrations\\20240525141143_eight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Bet.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\Bet.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Models\\Bet.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\Bet.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Models\\Bet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Table.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Table.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Table.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Table.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Table.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SeederBets.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\SeederBets.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\SeederBets.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\SeederBets.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\SeederBets.razor",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\Match.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Models\\Match.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAQwBUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Summarize.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Summarize.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Summarize.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Summarize.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Summarize.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:44:30.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeederUserProperties.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\SeederUserProperties.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\SeederUserProperties.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\SeederUserProperties.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\SeederUserProperties.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Controllers\\UserController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAADwv1UAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bets.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Bets.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Bets.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Bets.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Bets.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BetController.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\BetController.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Controllers\\BetController.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\BetController.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Controllers\\BetController.cs",
+              "ViewState": "AQIAAFIAAAAAAAAAAAAqwF0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEoAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MatchController.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\MatchController.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Controllers\\MatchController.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\MatchController.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Controllers\\MatchController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Program.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Program.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Index.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Index.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Index.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Index.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Matches.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Matches.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Matches.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Matches.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Matches.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Teams.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Teams.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Teams.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Teams.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Teams.razor",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAC4AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SeederMatch.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\SeederMatch.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\SeederMatch.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\SeederMatch.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\SeederMatch.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TeamController.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\TeamController.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Controllers\\TeamController.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\TeamController.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Controllers\\TeamController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TestPage.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\TestPage.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\TestPage.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\TestPage.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\TestPage.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAewDEAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Authentication.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Authentication.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Pages\\Authentication.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Pages\\Authentication.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Pages\\Authentication.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BetDialog.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Components\\BetDialog.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Components\\BetDialog.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Components\\BetDialog.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Components\\BetDialog.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MatchTable.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Components\\MatchTable.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Components\\MatchTable.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Components\\MatchTable.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Components\\MatchTable.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GroupTable.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Components\\GroupTable.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Components\\GroupTable.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Components\\GroupTable.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Components\\GroupTable.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\appsettings.json",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T22:21:13.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\_Imports.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\_Imports.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Program.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Program.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Bet.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\Bet.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Shared\\Models\\Bet.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\Bet.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Shared\\Models\\Bet.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20240525141143_eight.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240525141143_eight.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240525141143_eight.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240525141143_eight.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240525141143_eight.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SeedRoles.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Extensions\\SeedRoles.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Extensions\\SeedRoles.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Extensions\\SeedRoles.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Extensions\\SeedRoles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Areas\\Identity\\Pages\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Areas\\Identity\\Pages\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Areas\\Identity\\Pages\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Areas\\Identity\\Pages\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Readme.txt",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Readme.txt",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Readme.txt",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Readme.txt",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-02T22:21:13.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Match.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\Match.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Shared\\Models\\Match.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\Match.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Shared\\Models\\Match.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA5wB4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Models\\Team.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Models\\Team.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Shared\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Shared\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20240523120319_seven.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523120319_seven.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523120319_seven.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523120319_seven.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523120319_seven.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20240523104534_six.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104534_six.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104534_six.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104534_six.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104534_six.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240523104449_six.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104449_six.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104449_six.cs",
+              "ToolTip": "C:\\Users\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104449_six.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Daniel\\Desktop\\Euro_2024\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240523104449_six.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T10:44:49.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "LoginDisplay.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\LoginDisplay.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Shared\\LoginDisplay.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\LoginDisplay.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Shared\\LoginDisplay.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "RedirectToLogin.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\RedirectToLogin.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Shared\\RedirectToLogin.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\RedirectToLogin.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Shared\\RedirectToLogin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SurveyPrompt.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\SurveyPrompt.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Shared\\SurveyPrompt.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\SurveyPrompt.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Shared\\SurveyPrompt.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20240522220039_five.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522220039_five.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522220039_five.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522220039_five.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522220039_five.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "NavMenu.razor.css",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor.css",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor.css",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor.css",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Shared\\NavMenu.razor.css",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T22:21:13.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Team.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\Team.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Shared\\Models\\Team.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Shared\\Models\\Team.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Shared\\Models\\Team.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20240522205359_four.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522205359_four.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522205359_four.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522205359_four.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522205359_four.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\App.razor",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\App.razor",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\App.razor",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T22:21:13.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\index.html",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-06-02T22:21:13.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Client\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Euro_2024_Management_System\\Client\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T22:21:13.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20240522181720_three.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522181720_three.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522181720_three.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522181720_three.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522181720_three.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20240522180329_second.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522180329_second.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522180329_second.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522180329_second.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522180329_second.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20240522175712_first.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522175712_first.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522175712_first.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522175712_first.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Data\\Migrations\\20240522175712_first.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "OidcConfigurationController.cs",
+              "DocumentMoniker": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\OidcConfigurationController.cs",
+              "RelativeDocumentMoniker": "Euro_2024_Management_System\\Server\\Controllers\\OidcConfigurationController.cs",
+              "ToolTip": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Server\\Controllers\\OidcConfigurationController.cs",
+              "RelativeToolTip": "Euro_2024_Management_System\\Server\\Controllers\\OidcConfigurationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T22:21:13.758Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

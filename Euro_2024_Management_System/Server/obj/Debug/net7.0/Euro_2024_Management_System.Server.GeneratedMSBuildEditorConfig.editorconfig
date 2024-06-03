@@ -9,19 +9,19 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Euro_2024_Management_System.Server
 build_property.RootNamespace = Euro_2024_Management_System.Server
-build_property.ProjectDir = C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Server\
+build_property.ProjectDir = C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Server
+build_property.MSBuildProjectDirectory = C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Server/Areas/Identity/Pages/_LoginPartial.cshtml]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Server/Areas/Identity/Pages/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX0xvZ2luUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Daniel/Desktop/Euro_2024/Euro_2024_Management_System/Euro_2024_Management_System/Server/Pages/Error.cshtml]
+[C:/Users/danbu/Desktop/Projekt _ Euro 2024 Management/Euro_2024_Management_System/Euro_2024_Management_System/Server/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

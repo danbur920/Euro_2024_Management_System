@@ -6,15 +6,15 @@
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <div>
-        <label>Gole gospodarzy:</label>
+    <div class="form-control">
+        <label class="form-label">Gole gospodarzy:</label>
         <InputNumber @bind-Value="Bet.GoalsHome" />
     </div>
-    <div>
+    <div class="form-control">
         <label>Gole gości:</label>
         <InputNumber @bind-Value="Bet.GoalsAway" />
     </div>
-    <div>
+    <div class="form-control">
         <label>Typ:</label>
         <InputSelect @bind-Value="Bet.MatchBet">
             <option value=1>1</option>
@@ -25,11 +25,13 @@
             <option value=02>02</option>
         </InputSelect>
     </div>
-    <div>
+    <div class="form-control">
         <label>Ilość goli:</label>
         <InputNumber @bind-Value="Bet.GoalsCount" />
     </div>
-    <button type="submit">Zatwierdź</button>
+    <div class="form-control">
+        <button type="submit" class="btn btn-primary">Zatwierdź</button>
+    </div>
 </EditForm>
 
 @code {
