@@ -1,4 +1,6 @@
-﻿@using Microsoft.AspNetCore.Components.Authorization
+﻿@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
 
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager Navigation
@@ -40,8 +42,8 @@
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="prizes">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Nagrody
+            <NavLink class="nav-link" href="specialbets">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Typy specjalne
             </NavLink>
         </div>
         <div class="nav-item px-3">
@@ -49,30 +51,34 @@
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Regulamin
             </NavLink>
         </div>
-
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="seeder">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Dodaj mecze
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+@*         <div class="nav-item px-3">
             <NavLink class="nav-link" href="seederUserProp">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Dodaj role gracza
             </NavLink>
-        </div>
+        </div> *@
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="seederBets">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Dodaj zakłady
             </NavLink>
         </div>
-        <div class="nav-item px-3">
+@*         <div class="nav-item px-3">
             <NavLink class="nav-link" href="testPage">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Testy
             </NavLink>
-        </div>
+        </div> *@
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="summarize">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Podsumuj mecze
+            </NavLink>
+        </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="settle">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Wpisz wyniki meczy
             </NavLink>
         </div>
     </nav>

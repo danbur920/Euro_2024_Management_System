@@ -8,65 +8,73 @@
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using System.Linq
 
+@attribute [Authorize]
 @inject HttpClient Http
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject IModalService Modal
 
-<h3>Twoje typy:</h3>
+<h3 class="my-4 text-center">Twoje typy:</h3>
 
 @if (Matches != null && Bets_ != null && Teams != null && User != null)
 {
-    <table class="table">
-        <thead>
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
             <tr>
-                <th>Kolejka</th>
-                <th>Mecz</th>
-                <th>Rezultat</th>
-                <th>Obstaw mecz</th>
-                <th>Twój typ</th>
-                <th>Zdobyte punkty</th>
+                <th class="text-center">Kolejka</th>
+                <th class="text-center">Mecz</th>
+                <th class="text-center">Rezultat</th>
+                <th class="text-center">Obstaw mecz</th>
+                <th class="text-center">Twój typ</th>
+                <th class="text-center">Zdobyte punkty</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var match in Matches)
             {
                 <tr>
-                    <td>@match.Round</td>
-                    <td>@($"{Teams.FirstOrDefault(t => t.Id == match.HomeTeamId)?.Name} - {Teams.FirstOrDefault(t => t.Id == match.AwayTeamId)?.Name}")</td>
-                    <td>@ReturnResult(match)</td>
-                    <td>
-                        @if (!(returnBet(match).GoalsAway != null && returnBet(match).GoalsHome != null && returnBet(match).GoalsCount != null && returnBet(match).MatchBet != null) || betAgain)
+                    <td class="align-middle text-center">@match.Round</td>
+                    <td class="align-middle text-center">@($"{Teams.FirstOrDefault(t => t.Id == match.HomeTeamId)?.Name} - {Teams.FirstOrDefault(t => t.Id == match.AwayTeamId)?.Name}")</td>
+                    <td class="align-middle text-center">@ReturnResult(match)</td>
+                    <td class="align-middle text-center">
+                        @if (!returnBet(match).IsApproved && match.IsFinished == false)
                         {
                             @if (returnBet(match) != null)
                             {
-                                <EditForm Model="returnBet(match)" OnValidSubmit="() => HandleValidSubmit(returnBet(match))">
+                                <EditForm Model="returnBet(match)" OnValidSubmit="() => HandleValidSubmit(returnBet(match))" class="form-inline">
                                     <DataAnnotationsValidator />
                                     <ValidationSummary />
 
-                                    <div>
-                                        <label>Gole gospodarzy:</label>
-                                        <InputNumber @bind-Value="returnBet(match).GoalsHome" />
+                                    <div class="form-group mx-2">
+                                        <label class="mr-2">Gole gospodarzy:</label>
+                                        <InputNumber @bind-Value="returnBet(match).GoalsHome" class="form-control short-input" />
                                     </div>
-                                    <div>
-                                        <label>Gole gości:</label>
-                                        <InputNumber @bind-Value="returnBet(match).GoalsAway" />
+                                    <div class="form-group mx-2">
+                                        <label class="mr-2">Gole gości:</label>
+                                        <InputNumber @bind-Value="returnBet(match).GoalsAway" class="form-control short-input" />
                                     </div>
-                                    <div>
-                                        <label>Typ:</label>
-                                        <InputSelect @bind-Value="returnBet(match).MatchBet">
+                                    <div class="form-group mx-2">
+                                        <label class="mr-2">Typ:</label>
+                                        <InputSelect @bind-Value="returnBet(match).MatchBet" class="form-control short-input">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="0">0</option>
                                             <option value="12">12</option>
                                             <option value="10">10</option>
-                                            <option value="02">02</option>
+                                            <option value="20">02</option>
                                         </InputSelect>
                                     </div>
-                                    <div>
-                                        <label>Ilość goli:</label>
-                                        <InputNumber @bind-Value="returnBet(match).GoalsCount" />
+                                    <div class="form-group mx-2">
+                                        <label class="mr-2">Ilość goli:</label>
+                                        <InputNumber @bind-Value="returnBet(match).GoalsCount" class="form-control short-input" />
                                     </div>
-                                    <button type="submit">Zatwierdź</button>
+                                    @if (returnBet(match).GoalsAway != null && returnBet(match).GoalsHome != null && returnBet(match).GoalsCount != null && returnBet(match).MatchBet != null)
+                                    {
+                                        <button type="submit" class="btn btn-success mt-2">Zatwierdź</button>
+                                    }
+                                    else
+                                    {
+                                        <p>Uzupełnij wszystkie pola</p>
+                                    }
                                 </EditForm>
                             }
                             else
@@ -76,17 +84,26 @@
                         }
                         else
                         {
-                            <p>Zakład obstawiony</p>
-                            <button class="btn btn-primary" @onclick="()=>changeBetAgain()">Obstaw jeszcze raz</button>
+                            if (match.IsFinished == true && returnBet(match).IsApproved == false)
+                            {
+                                <p>Nie obstawiłeś tego zakładu</p>
+                            }
+                            else if (match.IsFinished == false)
+                            {
+                                <button class="btn btn-primary" @onclick="()=>changeBetAgain(returnBet(match))">Obstaw jeszcze raz</button>
+                            }
+                            else
+                            {
+                                <p>Zakład rozliczony</p>
+                            }
                         }
                     </td>
-                    <td>
-                        <p>@returnBet(match).Id</p>
+                    <td class="align-middle text-center">
                         <p>Typ: @returnBet(match).MatchBet</p>
                         <p>Wynik: @returnBet(match).GoalsHome:@returnBet(match).GoalsAway</p>
                         <p>Ilość goli: @returnBet(match).GoalsCount</p>
                     </td>
-                    <th>@(returnBet(match).PointsScored == null ? "-" : returnBet(match).PointsScored) </th>
+                    <th class="align-middle text-center">@(returnBet(match).PointsScored == null ? "-" : returnBet(match).PointsScored)</th>
                 </tr>
             }
         </tbody>
@@ -98,7 +115,6 @@
     private Match[] Matches;
     private Bet[] Bets_;
     private ApplicationUser User;
-    private bool betAgain = false;
 
     protected override async Task OnInitializedAsync()
     {
@@ -123,9 +139,19 @@
         }
     }
 
-    private void changeBetAgain()
+    private async Task changeBetAgain(Bet bet)
     {
-        betAgain = !betAgain;
+        var response = await Http.PutAsJsonAsync($"api/bet/changeState/{bet.Id}", bet);
+
+        if (response.IsSuccessStatusCode)
+        {
+            await RefreshData();
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine("Błąd podczas aktualizacji zakładu");
+        }
     }
 
     private string ReturnResult(Match match)
@@ -151,7 +177,7 @@
         var response = await Http.PutAsJsonAsync($"api/bet/{bet.Id}", bet);
         if (response.IsSuccessStatusCode)
         {
-            betAgain = !betAgain;
+            await RefreshData();
             StateHasChanged();
         }
         else

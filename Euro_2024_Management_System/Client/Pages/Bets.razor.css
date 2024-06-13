@@ -1,0 +1,42 @@
+﻿.table {
+    margin-top: 20px;
+}
+
+    .table th, .table td {
+        vertical-align: middle;
+    }
+
+.form-inline .form-group {
+    margin-bottom: 15px;
+}
+
+.form-inline .form-control {
+    width: auto;
+}
+
+    .form-inline .form-control.short-input {
+        width: 10px; 
+    }
+
+h3 {
+    font-size: 1.75rem;
+    color: #343a40;
+}
+
+.btn {
+    font-size: 0.9rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}

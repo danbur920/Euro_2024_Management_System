@@ -1,0 +1,113 @@
+﻿@page "/specialbets"
+@inject HttpClient Http
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components
+@using System.Security.Claims
+
+<h3>Specjalne Zakłady</h3>
+
+@if (specialBets == null || userSpecialBets == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Tytuł Zakładu</th>
+                <th>Typ Użytkownika</th>
+                <th>Zatwierdzony</th>
+                <th>Rozliczony</th>
+                <th>Dodaj Swój Typ</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var bet in specialBets)
+            {
+                <tr>
+                    <td>@bet.Title</td>
+                    <td>@GetUserBet(bet.Id)</td>
+                    <td>@IsApproved(bet.Id)</td>
+                    <td>@IsSettled(bet.Id)</td>
+                    <td>
+                        @if (!IsSettledBool(bet.Id))
+                        {
+                            <EditForm Model="new UserSpecialBet()" OnValidSubmit="() => HandleValidSubmit(returnSpecialUserBet(bet))">
+                                <DataAnnotationsValidator />
+                                <ValidationSummary />
+                                <InputText @bind-Value="returnSpecialUserBet(bet).UserBet" placeholder="Wprowadź swój typ" />
+                                <button class="btn btn-primary" type="submit">
+                                    @(returnSpecialUserBet(bet).IsApproved ? "Zmień typ" : "Zatwierdź")
+                                </button>
+                            </EditForm>
+                        }
+                        else
+                        {
+                            <span>Zakład zakończony</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private SpecialBet[] specialBets;
+    private UserSpecialBet[] userSpecialBets;
+
+    protected override async Task OnInitializedAsync()
+    {
+        specialBets = await Http.GetFromJsonAsync<SpecialBet[]>("api/SpecialBets/specialBets");
+        userSpecialBets = await Http.GetFromJsonAsync<UserSpecialBet[]>("api/SpecialBets/userSpecialBetsByLoggedUser");
+    }
+
+    private UserSpecialBet returnSpecialUserBet(SpecialBet bet)
+    {
+        return userSpecialBets.FirstOrDefault(x => x.SpecialBetId == bet.Id) ?? new UserSpecialBet { SpecialBetId = bet.Id };
+    }
+
+    private string GetUserBet(int specialBetId)
+    {
+        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
+        return userBet?.UserBet ?? "Brak typu";
+    }
+
+    private string IsApproved(int specialBetId)
+    {
+        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
+        return userBet?.IsApproved ?? false ? "Tak" : "Nie";
+    }
+
+    private string IsSettled(int specialBetId)
+    {
+        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
+        return userBet?.IsSettled ?? false ? "Tak" : "Nie";
+    }
+
+    private bool IsSettledBool(int specialBetId)
+    {
+        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
+        return userBet?.IsSettled ?? false;
+    }
+
+    private async Task HandleValidSubmit(UserSpecialBet userBet)
+    {
+        if (userBet != null && !string.IsNullOrEmpty(userBet.UserBet))
+        {
+            var response = await Http.PutAsJsonAsync($"api/SpecialBets/userSpecialBets/{userBet.Id}", userBet);
+
+            if (response.IsSuccessStatusCode)
+            {
+                userSpecialBets = await Http.GetFromJsonAsync<UserSpecialBet[]>("api/SpecialBets/userSpecialBetsByLoggedUser");
+                StateHasChanged();
+            }
+            else
+            {
+                Console.WriteLine("Błąd podczas aktualizacji zakładu");
+            }
+        }
+    }
+}

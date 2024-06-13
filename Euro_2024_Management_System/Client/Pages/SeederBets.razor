@@ -6,13 +6,14 @@
 @using System.Globalization
 
 @inject HttpClient Http
+@attribute [Authorize]
 
 <h3>Wstaw mecz</h3>
 
 @if (Matches != null && Teams != null && Users != null)
 {
     <div>
-        
+        <button @onclick="()=> AddBets()">Dodaj zakłady jeśli nie istnieją</button>
     </div>
 }
 else
@@ -24,6 +25,7 @@ else
 @code {
     private List<Match> Matches = new List<Match>();
     private List<Team> Teams = new List<Team>();
+    private List<Bet> Bets = new List<Bet>();
     private List<ApplicationUser> Users = new List<ApplicationUser>();
 
 
@@ -32,25 +34,33 @@ else
         Teams = await Http.GetFromJsonAsync<List<Team>>("api/team");
         Matches = await Http.GetFromJsonAsync<List<Match>>("api/match");
         Users = await Http.GetFromJsonAsync<List<ApplicationUser>>("api/user");
+        Bets = await Http.GetFromJsonAsync<List<Bet>>("api/bet");
     }
 
     private async Task AddBets()
     {
+        var count = 0;
         for (int i = 0; i < Users.Count; i++)
         {
             var userId = Users[i].Id;
             for (int j = 0; j < Matches.Count; j++)
             {
                 var matchId = Matches[j].Id;
+                var IsBetExists = Bets.Any(b => b.MatchId == matchId && b.UserId == userId);
                 var newBet = new Bet() { MatchId = matchId, UserId = userId };
-                var response = await Http.PostAsJsonAsync("api/bet", newBet);
 
-                if (response.IsSuccessStatusCode)
-                    Console.WriteLine($"Dodano zakład o MatchId: {matchId} oraz UserId: {userId}");
-                else
-                    Console.WriteLine($"Wystąpił problem z dodaniem zakładu.");
+                if(!IsBetExists)
+                {
+                    var response = await Http.PostAsJsonAsync("api/bet", newBet);
+                    count++;
+                    if (response.IsSuccessStatusCode)
+                        Console.WriteLine($"Dodano zakład o MatchId: {matchId} oraz UserId: {userId}");
+                    else
+                        Console.WriteLine($"Wystąpił problem z dodaniem zakładu.");
+                }
             }
         }
+        Console.WriteLine($"Dodano {count} nowych zakładów :)");
     }
 
     // private async Task HandleValidSubmit()

@@ -1,0 +1,50 @@
+.table[b-0g5p7sxz7o] {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    font-family: 'Arial', sans-serif;
+}
+
+    .table th[b-0g5p7sxz7o], .table td[b-0g5p7sxz7o] {
+        vertical-align: middle;
+        padding: 12px;
+    }
+
+    .table th[b-0g5p7sxz7o] {
+        background-color: #343a40;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+.table-striped tbody tr:nth-of-type(odd)[b-0g5p7sxz7o] {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover[b-0g5p7sxz7o] {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-bordered[b-0g5p7sxz7o] {
+    border: 1px solid #dee2e6;
+}
+
+.align-middle[b-0g5p7sxz7o] {
+    vertical-align: middle;
+}
+
+.text-center[b-0g5p7sxz7o] {
+    text-align: center;
+}
+
+h3[b-0g5p7sxz7o] {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p[b-0g5p7sxz7o] {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    text-align: center;
+}

@@ -5,55 +5,57 @@
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
 @using System.Globalization
 
+@attribute [Authorize]
 @inject HttpClient Http
 
-<h3>Wstaw mecz</h3>
+<div style="max-width: 600px; margin: auto;">
+    <h3 class="text-center">Wstaw mecz</h3>
 
-<EditForm Model="@newMatch" OnValidSubmit="@HandleValidSubmit">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
+    <EditForm Model="@newMatch" OnValidSubmit="@HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
 
-    <div>
-        <label for="homeTeamId">ID Drużyna Gospodarzy:</label>
-        <select id="homeTeamId" @bind="newMatch.HomeTeamId">
-            <option value="">Wybierz drużynę</option>
-            @foreach (var team in teams)
-            {
-                <option value="@team.Id">@team.Name</option>
-            }
-        </select>
-    </div>
-    <div>
-        <label for="awayTeamId">ID Drużyna Gości:</label>
-        <select id="awayTeamId" @bind="newMatch.AwayTeamId">
-            <option value="">Wybierz drużynę</option>
-            @foreach (var team in teams)
-            {
-                <option value="@team.Id">@team.Name</option>
-            }
-        </select>
-    </div>
-    <div>
-        <label>Runda:</label>
-        <InputNumber @bind-Value="newMatch.Round" />
-    </div>
-    <div>
-        <label>Data Meczu:</label>
-        <InputDate @bind-Value="newMatch.MatchDate" />
-    </div>
-    <div>
-        <label for="matchTime">Godzina Meczu:</label>
-        <input type="text" id="matchTime" @bind="matchTimeString" />
-    </div>
-    <div>
-        <label>Czy zakończony:</label>
-        <InputCheckbox @bind-Value="newMatch.IsFinished" />
-    </div>
-@*     <div>
-        <button type="submit">Dodaj mecz</button>
-    </div> *@
-</EditForm>
-
+        <div class="form-group">
+            <label for="homeTeamId">ID Drużyna Gospodarzy:</label>
+            <select id="homeTeamId" class="form-control" @bind="newMatch.HomeTeamId">
+                <option value="">Wybierz drużynę</option>
+                @foreach (var team in teams)
+                {
+                    <option value="@team.Id">@team.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="awayTeamId">ID Drużyna Gości:</label>
+            <select id="awayTeamId" class="form-control" @bind="newMatch.AwayTeamId">
+                <option value="">Wybierz drużynę</option>
+                @foreach (var team in teams)
+                {
+                    <option value="@team.Id">@team.Name</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Runda:</label>
+            <InputNumber class="form-control" @bind-Value="newMatch.Round" />
+        </div>
+        <div class="form-group">
+            <label>Data Meczu:</label>
+            <InputDate class="form-control" @bind-Value="newMatch.MatchDate" />
+        </div>
+        <div class="form-group">
+            <label for="matchTime">Godzina Meczu:</label>
+            <input type="text" id="matchTime" class="form-control" @bind="matchTimeString" />
+        </div>
+        <div class="form-group">
+            <label>Czy zakończony:</label>
+            <InputCheckbox @bind-Value="newMatch.IsFinished" />
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Dodaj mecz</button>
+        </div>
+    </EditForm>
+</div>
 
 
 @code {

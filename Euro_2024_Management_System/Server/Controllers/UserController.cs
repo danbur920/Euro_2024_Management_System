@@ -24,7 +24,7 @@ namespace Euro_2024_Management_System.Server.Controllers
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
-            var users = await _userManager.Users.ToArrayAsync();
+            var users = await _userManager.Users.OrderByDescending(x=>x.Points).ToArrayAsync();
             return Ok(users);
         }
 
@@ -73,8 +73,8 @@ namespace Euro_2024_Management_System.Server.Controllers
             }
 
             // Aktualizujemy pozostałe właściwości użytkownika
-            existingUser.FirstName = "Nastia";
-            existingUser.LastName = "Bura";
+            existingUser.FirstName = "";
+            existingUser.LastName = "";
             existingUser.Age = 5;
 
             var updateResult = await _userManager.UpdateAsync(existingUser);

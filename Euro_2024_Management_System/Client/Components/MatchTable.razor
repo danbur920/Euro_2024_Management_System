@@ -1,15 +1,15 @@
 ﻿@using Euro_2024_Management_System.Shared.Models
 
-<table class="table">
-    <thead>
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
         <tr>
-            <th>Gospodarz</th>
-            <th>Gość</th>
-            <th>Data</th>
-            <th>Godzina</th>
-            <th>Wynik</th>
-            <th>Rezultat</th>
-            <th>Czy zakończony?</th>
+            <th class="text-center">Gospodarz</th>
+            <th class="text-center">Gość</th>
+            <th class="text-center">Data</th>
+            <th class="text-center">Godzina</th>
+            <th class="text-center">Wynik</th>
+            <th class="text-center">Rezultat</th>
+            <th class="text-center">Czy zakończony?</th>
         </tr>
     </thead>
     <tbody>
@@ -18,13 +18,13 @@
             @foreach (var match in Matches)
             {
                 <tr>
-                    <td>@ReturnTeamName(match.HomeTeamId)</td>
-                    <td>@ReturnTeamName(match.AwayTeamId)</td>
-                    <td>@match.MatchDate.ToString("dd.MM.yyyy")</td>
-                    <td>@match.MatchTime.ToString(@"hh\:mm")</td>
-                    <td>@ReturnScore(match.GoalsHome, match.GoalsAway)</td>      
-                    <td>@match.Result</td>
-                    <td>@(match.IsFinished ? "Tak" : "Nie")</td>
+                    <td class="align-middle text-center">@ReturnTeamName(match.HomeTeamId)</td>
+                    <td class="align-middle text-center">@ReturnTeamName(match.AwayTeamId)</td>
+                    <td class="align-middle text-center">@match.MatchDate.ToString("dd.MM.yyyy")</td>
+                    <td class="align-middle text-center">@match.MatchTime.ToString(@"hh\:mm")</td>
+                    <td class="align-middle text-center">@ReturnScore(match.GoalsHome, match.GoalsAway)</td>
+                    <td class="align-middle text-center">@match.Result</td>
+                    <td class="align-middle text-center @(match.IsFinished ? "text-success" : "")">@(match.IsFinished ? "Tak" : "Nie")</td>
                 </tr>
             }
         }

@@ -297,7 +297,18 @@ C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Manageme
 C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Daniel\Desktop\Euro_2024\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Blazored.Modal.dll
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.csproj.AssemblyReference.cache
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.AssemblyInfoInputs.cache
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.AssemblyInfo.cs
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.csproj.CoreCompileInputs.cache
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.RazorAssemblyInfo.cache
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.RazorAssemblyInfo.cs
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.sourcelink.json
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Client.staticwebassets.runtime.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\appsettings.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugProxy.dll
@@ -306,8 +317,6 @@ C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_Syste
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\BlazorDebugProxy\Newtonsoft.Json.dll
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Client.staticwebassets.runtime.json
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\appsettings.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Server.staticwebassets.runtime.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Server.exe
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Server.deps.json
@@ -572,16 +581,6 @@ C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_Syste
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Shared.dll
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Client.pdb
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\bin\Debug\net7.0\Euro_2024_Management_System.Shared.pdb
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.csproj.AssemblyReference.cache
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.AssemblyInfoInputs.cache
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.AssemblyInfo.cs
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.csproj.CoreCompileInputs.cache
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.RazorAssemblyInfo.cache
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.RazorAssemblyInfo.cs
-C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.sourcelink.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\staticwebassets\msbuild.Euro_2024_Management_System.Server.Microsoft.AspNetCore.StaticWebAssets.props
@@ -596,3 +595,4 @@ C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_Syste
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.pdb
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.genruntimeconfig.cache
 C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\ref\Euro_2024_Management_System.Server.dll
+C:\Users\danbu\Desktop\Projekt _ Euro 2024 Management\Euro_2024_Management_System\Euro_2024_Management_System\Server\obj\Debug\net7.0\Euro_2024_Management_System.Server.MvcApplicationPartsAssemblyInfo.cs

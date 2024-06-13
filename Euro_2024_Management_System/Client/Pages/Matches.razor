@@ -26,11 +26,39 @@
                 Teams="AllTeams" />
 </div>
 
+<div>
+    <h4 style="text-align:center">1/8 finału</h4>
+    <MatchTable Matches="MatchesRound4"
+                Teams="AllTeams" />
+</div>
+
+<div>
+    <h4 style="text-align:center">Ćwierćfinał</h4>
+    <MatchTable Matches="MatchesRound5"
+                Teams="AllTeams" />
+</div>
+
+<div>
+    <h4 style="text-align:center">Półfinał</h4>
+    <MatchTable Matches="MatchesRound6"
+                Teams="AllTeams" />
+</div>
+
+<div>
+    <h4 style="text-align:center">Finał</h4>
+    <MatchTable Matches="MatchesRound7"
+                Teams="AllTeams" />
+</div>
 
 @code {
     private Match[] MatchesRound1;
     private Match[] MatchesRound2;
     private Match[] MatchesRound3;
+    private Match[] MatchesRound4;
+    private Match[] MatchesRound5;
+    private Match[] MatchesRound6;
+    private Match[] MatchesRound7;
+
     private Team[] AllTeams;
 
     protected override async Task OnInitializedAsync()
@@ -40,6 +68,10 @@
             MatchesRound1 = await Http.GetFromJsonAsync<Match[]>("api/match/round/1");
             MatchesRound2 = await Http.GetFromJsonAsync<Match[]>("api/match/round/2");
             MatchesRound3 = await Http.GetFromJsonAsync<Match[]>("api/match/round/3");
+            MatchesRound4 = await Http.GetFromJsonAsync<Match[]>("api/match/round/4");
+            MatchesRound5 = await Http.GetFromJsonAsync<Match[]>("api/match/round/5");
+            MatchesRound6 = await Http.GetFromJsonAsync<Match[]>("api/match/round/6");
+            MatchesRound7 = await Http.GetFromJsonAsync<Match[]>("api/match/round/7");
 
             AllTeams = await Http.GetFromJsonAsync<Team[]>("api/team");
         }

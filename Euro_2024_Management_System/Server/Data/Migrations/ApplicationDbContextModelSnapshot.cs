@@ -266,6 +266,12 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
                     b.Property<int?>("GoalsHome")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSettled")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("MatchBet")
                         .HasColumnType("int");
 
@@ -335,6 +341,22 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
                     b.ToTable("Matches");
                 });
 
+            modelBuilder.Entity("Euro_2024_Management_System.Server.Models.SpecialBet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SpecialBets");
+                });
+
             modelBuilder.Entity("Euro_2024_Management_System.Server.Models.Team", b =>
                 {
                     b.Property<int>("Id")
@@ -375,6 +397,41 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teams");
+                });
+
+            modelBuilder.Entity("Euro_2024_Management_System.Server.Models.UserSpecialBet", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsSettled")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("Points")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SpecialBetId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserBet")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("SpecialBetId");
+
+                    b.ToTable("UserSpecialBets");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -552,6 +609,21 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
                     b.Navigation("HomeTeam");
                 });
 
+            modelBuilder.Entity("Euro_2024_Management_System.Server.Models.UserSpecialBet", b =>
+                {
+                    b.HasOne("Euro_2024_Management_System.Server.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany("UserSpecialBets")
+                        .HasForeignKey("ApplicationUserId");
+
+                    b.HasOne("Euro_2024_Management_System.Server.Models.SpecialBet", "SpecialBet")
+                        .WithMany("UserSpecialBets")
+                        .HasForeignKey("SpecialBetId");
+
+                    b.Navigation("ApplicationUser");
+
+                    b.Navigation("SpecialBet");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -606,11 +678,18 @@ namespace Euro_2024_Management_System.Server.Data.Migrations
             modelBuilder.Entity("Euro_2024_Management_System.Server.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Bets");
+
+                    b.Navigation("UserSpecialBets");
                 });
 
             modelBuilder.Entity("Euro_2024_Management_System.Server.Models.Match", b =>
                 {
                     b.Navigation("Bets");
+                });
+
+            modelBuilder.Entity("Euro_2024_Management_System.Server.Models.SpecialBet", b =>
+                {
+                    b.Navigation("UserSpecialBets");
                 });
 
             modelBuilder.Entity("Euro_2024_Management_System.Server.Models.Team", b =>

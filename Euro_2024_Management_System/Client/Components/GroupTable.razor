@@ -1,17 +1,17 @@
 ﻿@using Euro_2024_Management_System.Shared.Models
 
-<table class="table">
-    <thead>
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
         <tr>
-            <th>Reprezentacja</th>
-            <th>Mecze</th>
-            <th>Wygrane</th>
-            <th>Remisy</th>
-            <th>Przegrane</th>
-            <th>Zdobyte bramki</th>
-            <th>Stracone bramki</th>
-            <th>Bilans bramkowy</th>
-            <th>Punkty</th>
+            <th class="text-center">Reprezentacja</th>
+            <th class="text-center">Mecze</th>
+            <th class="text-center">Wygrane</th>
+            <th class="text-center">Remisy</th>
+            <th class="text-center">Przegrane</th>
+            <th class="text-center">Zdobyte bramki</th>
+            <th class="text-center">Stracone bramki</th>
+            <th class="text-center">Bilans bramkowy</th>
+            <th class="text-center">Punkty</th>
         </tr>
     </thead>
     <tbody>
@@ -20,15 +20,15 @@
             @foreach (var team in Teams)
             {
                 <tr>
-                    <td>@team.Name</td>
-                    <td>@(team.Wins + @team.Draws + @team.Losses)</td>
-                    <td>@team.Wins</td>
-                    <td>@team.Draws</td>
-                    <td>@team.Losses</td>
-                    <td>@team.GoalsScored</td>
-                    <td>@team.GoalsConceded</td>
-                    <td>@team.GoalBalance</td>
-                    <td>@team.Points</td>
+                    <td class="align-middle text-center">@team.Name</td>
+                    <td class="align-middle text-center">@(team.Wins + @team.Draws + @team.Losses)</td>
+                    <td class="align-middle text-center">@team.Wins</td>
+                    <td class="align-middle text-center">@team.Draws</td>
+                    <td class="align-middle text-center">@team.Losses</td>
+                    <td class="align-middle text-center">@team.GoalsScored</td>
+                    <td class="align-middle text-center">@team.GoalsConceded</td>
+                    <td class="align-middle text-center">@team.GoalBalance</td>
+                    <td class="align-middle text-center">@team.Points</td>
                 </tr>
             }
         }

@@ -1,0 +1,50 @@
+﻿.table {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+    font-family: 'Arial', sans-serif;
+}
+
+    .table th, .table td {
+        vertical-align: middle;
+        padding: 12px;
+    }
+
+    .table th {
+        background-color: #343a40;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    text-align: center;
+}

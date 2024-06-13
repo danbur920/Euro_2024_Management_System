@@ -5,7 +5,7 @@
 @using Microsoft.AspNetCore.Identity
 @using Microsoft.Extensions.DependencyInjection
 @inject HttpClient Http
-
+@attribute [Authorize]
 <h3>SeederUserProperties</h3>
 
 @if (user != null)

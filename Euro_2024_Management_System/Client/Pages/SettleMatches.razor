@@ -1,0 +1,117 @@
+﻿@page "/settle"
+@using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
+@inject HttpClient Http
+@attribute [Authorize]
+
+@* Ten widok służy do wpisywania wyników meczów. *@
+
+@if (Matches != null)
+{
+    <div style="max-width: 800px; margin: auto;">
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th class="text-center">Mecz</th>
+                    <th class="text-center">Data</th>
+                    <th class="text-center">Wpisz rezultat</th>
+                    <th class="text-center">Rezultat</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var match in Matches)
+                {
+                    <tr>
+                        <td class="align-middle">@returnOpponents(match)</td>
+                        <td class="align-middle">@match.MatchDate.Date.ToString("dd.MM.yyyy")</td>
+                        <td class="align-middle">
+                            @if (match.IsFinished)
+                            {
+                                <span>Zakończony</span>
+                                <button class="btn btn-warning ml-2" @onclick="() => changeState(match)">Zmień wynik</button>
+                            }
+                            else
+                            {
+                                <EditForm Model="@match" OnValidSubmit="() => HandleValidSubmit(match)">
+                                    <DataAnnotationsValidator />
+                                    <ValidationSummary />
+
+                                    <div class="form-group">
+                                        <label>Gole gospodarzy:</label>
+                                        <InputNumber class="form-control" @bind-Value="match.GoalsHome" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Gole gości:</label>
+                                        <InputNumber class="form-control" @bind-Value="match.GoalsAway" />
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary" type="submit">Zatwierdź</button>
+                                    </div>
+                                </EditForm>
+                            }
+                        </td>
+                        <td class="align-middle">@match.GoalsHome : @match.GoalsAway</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+
+@code {
+    private Match[] Matches;
+    private Team[] Teams;
+    protected override async Task OnInitializedAsync()
+    {
+        await RefreshData();
+    }
+
+    private async Task RefreshData()
+    {
+        try
+        {
+            Matches = await Http.GetFromJsonAsync<Match[]>("api/match");
+            Teams = await Http.GetFromJsonAsync<Team[]>("api/team");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error fetching data: " + ex.Message);
+        }
+    }
+
+    private string returnOpponents(Match match)
+    {
+        string homeTeamName = Teams.Where(x => x.Id == match.HomeTeamId).FirstOrDefault().Name;
+        string awayTeamName = Teams.Where(x => x.Id == match.AwayTeamId).FirstOrDefault().Name;
+
+        return $"{homeTeamName} - {awayTeamName}";
+    }
+
+    private async Task HandleValidSubmit(Match match)
+    {
+        if(match != null && match.GoalsHome != null && match.GoalsAway != null)
+        {
+            var response = await Http.PutAsJsonAsync($"api/match/{match.Id}", match);
+
+            if (response.IsSuccessStatusCode)
+            {
+                await RefreshData();
+                StateHasChanged();
+            }
+            else
+                Console.WriteLine("Błąd podczas aktualizacji zakładu");
+        }
+    }
+
+    private async Task changeState(Match match)
+    {
+        if(match != null)
+        {
+            var response = await Http.PutAsJsonAsync($"api/match/state/{match.Id}", match);
+            await RefreshData();
+            StateHasChanged();
+        }
+    }
+}

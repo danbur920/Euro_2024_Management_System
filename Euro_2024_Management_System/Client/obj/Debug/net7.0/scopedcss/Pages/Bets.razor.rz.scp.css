@@ -1,0 +1,42 @@
+.table[b-jbz7ux8wm1] {
+    margin-top: 20px;
+}
+
+    .table th[b-jbz7ux8wm1], .table td[b-jbz7ux8wm1] {
+        vertical-align: middle;
+    }
+
+.form-inline .form-group[b-jbz7ux8wm1] {
+    margin-bottom: 15px;
+}
+
+.form-inline .form-control[b-jbz7ux8wm1] {
+    width: auto;
+}
+
+    .form-inline .form-control.short-input[b-jbz7ux8wm1] {
+        width: 10px; 
+    }
+
+h3[b-jbz7ux8wm1] {
+    font-size: 1.75rem;
+    color: #343a40;
+}
+
+.btn[b-jbz7ux8wm1] {
+    font-size: 0.9rem;
+}
+
+p[b-jbz7ux8wm1] {
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary[b-jbz7ux8wm1] {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success[b-jbz7ux8wm1] {
+    background-color: #28a745;
+    border-color: #28a745;
+}

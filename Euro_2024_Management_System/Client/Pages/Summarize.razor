@@ -1,9 +1,10 @@
 ﻿@page "/summarize"
 
 @using Euro_2024_Management_System.Shared.Models
+@using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Identity
 @inject HttpClient Http
-
+@attribute [Authorize]
 <h3>Summarize</h3>
 
 <button class="btn btn-primary" @onclick="SummarizeBets">Podsumuj</button>
@@ -11,92 +12,6 @@
 <span>@(state ? "Zakończono aktualizację" : "Zaktualizuj")</span>
 
 @code {
-    // private Team[] Teams;
-    // private Match[] Matches;
-    // private Bet[] Bets;
-    // private ApplicationUser[] Users;
-    // private bool state = false;
-
-    // protected override async Task OnInitializedAsync()
-    // {
-    //     Teams = await Http.GetFromJsonAsync<Team[]>("api/team");
-    //     Matches = await Http.GetFromJsonAsync<Match[]>("api/match");
-    //     Bets = await Http.GetFromJsonAsync<Bet[]>($"api/bet");
-    //     Users = await Http.GetFromJsonAsync<ApplicationUser[]>($"api/user");
-    // }
-
-    // private void SummarizeBets()
-    // {
-    //     state = false;
-    //     foreach (var user in Users)
-    //     {
-    //         Bet[] userBets = Bets.Where(x => x.UserId == user.Id && x.MatchBet != null).ToArray();
-
-    //         foreach (var bet in userBets)
-    //         {
-    //             var match = Matches.FirstOrDefault(x => x.Id == bet.MatchId);
-    //             if(match.IsFinished)
-    //             {
-    //                 // Dokładny wynik:
-    //                 if(bet.GoalsHome == match.GoalsHome && bet.GoalsAway == match.GoalsAway)
-    //                 {
-    //                     user.Points += 5;
-    //                 }
-
-    //                 // Dokładna ilość goli:
-    //                 var goalsCount = match.GoalsHome + match.GoalsAway;
-    //                 if(bet.GoalsCount == goalsCount)
-    //                 {
-    //                     user.Points += 2;
-    //                 }
-
-    //                 // Remis (0):
-    //                 if(bet.MatchBet == 0 && match.Result == 0)
-    //                 {
-    //                     user.Points += 3;
-    //                 }
-
-    //                 // Wygrana gości (1):
-    //                 if (bet.MatchBet == 1 && match.Result == 1)
-    //                 {
-    //                     user.Points += 2;
-    //                 }
-
-    //                 // Wygrana gospodarzy (2):
-    //                 if (bet.MatchBet == 2 && match.Result == 2)
-    //                 {
-    //                     user.Points += 2;
-    //                 }
-
-    //                 // Podpórka 10:
-    //                 if(bet.MatchBet == 10)
-    //                 {
-    //                     if(!(match.GoalsAway > match.GoalsHome))
-    //                     {
-    //                         user.Points += 1;
-    //                     }
-    //                 }
-
-    //                 // Podpórka 02:
-    //                 if (bet.MatchBet == 02)
-    //                 {
-    //                     if (!(match.GoalsAway < match.GoalsHome))
-    //                     {
-    //                         user.Points += 1;
-    //                     }
-    //                 }
-
-    //                 // Podpórka 12:
-    //                 if (bet.MatchBet == 12 && match.Result != 0)
-    //                 {
-    //                     user.Points += 1;
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     state = true;
-    // }
-
     private bool state = false;
 
     private async Task SummarizeBets()
@@ -110,3 +25,6 @@
         }
     }
 }
+
+
+@* Ten widok służy do podsumowywania zakładów - > dodawania punktów graczom *@

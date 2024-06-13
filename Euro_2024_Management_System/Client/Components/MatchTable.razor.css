@@ -1,0 +1,44 @@
+﻿.table {
+    margin-top: 20px;
+    border: 1px solid #dee2e6;
+}
+
+    .table th, .table td {
+        vertical-align: middle;
+        padding: 12px;
+    }
+
+    .table th {
+        background-color: #343a40;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+th, td {
+    text-align: center;
+}
+
+.text-success {
+    color: #28a745;
+    font-weight: bold;
+}

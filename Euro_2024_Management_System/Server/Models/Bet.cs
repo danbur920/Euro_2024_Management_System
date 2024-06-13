@@ -17,6 +17,8 @@ namespace Euro_2024_Management_System.Server.Models
         public int? GoalsAway { get; set; }
         public int? GoalsCount { get; set; }
         public int? PointsScored { get; set; }
+        public bool IsApproved { get; set; } // sprawdza czy ktoś zatwierdził zakład
+        public bool IsSettled { get; set; } // sprawdza czy zakład został rozliczony (czy zostały dodane punkty)
         public virtual ApplicationUser? ApplicationUser { get; set; }
         public virtual Match? Match { get; set; }
     }

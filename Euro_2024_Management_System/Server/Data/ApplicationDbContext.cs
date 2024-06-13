@@ -15,6 +15,8 @@ namespace Euro_2024_Management_System.Server.Data
         public DbSet<Bet> Bets { get; set; }
         public DbSet<Match> Matches { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<SpecialBet> SpecialBets { get; set; }
+        public DbSet<UserSpecialBet> UserSpecialBets { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options,
             IOptions<OperationalStoreOptions> operationalStoreOptions,
