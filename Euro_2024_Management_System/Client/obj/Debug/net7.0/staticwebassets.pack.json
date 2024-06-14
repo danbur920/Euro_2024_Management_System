@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\images\\start.jpg",
+      "PackagePath": "staticwebassets\\images\\start.jpg"
+    },
+    {
       "Id": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

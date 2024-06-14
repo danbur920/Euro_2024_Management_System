@@ -4,6 +4,7 @@
 
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager Navigation
+@inject HttpClient Http
 
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
@@ -23,69 +24,87 @@
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="table">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Tabela
+                <span class="oi oi-grid-three-up" aria-hidden="true"></span> Tabela
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="teams">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Grupy
+                <span class="oi oi-people" aria-hidden="true"></span> Grupy
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="matches">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Mecze
+                <span class="oi oi-calendar" aria-hidden="true"></span> Mecze
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="bets">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Typy
+                <span class="oi oi-list" aria-hidden="true"></span> Typy
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="specialbets">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Typy specjalne
+                <span class="oi oi-star" aria-hidden="true"></span> Typy specjalne
             </NavLink>
         </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="rules">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Regulamin
+                <span class="oi oi-book" aria-hidden="true"></span> Regulamin
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="seeder">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Dodaj mecze
-            </NavLink>
-        </div>
-@*         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="seederUserProp">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Dodaj role gracza
-            </NavLink>
-        </div> *@
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="seederBets">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Dodaj zakłady
-            </NavLink>
-        </div>
-@*         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="testPage">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Testy
-            </NavLink>
-        </div> *@
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="summarize">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Podsumuj mecze
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="settle">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Wpisz wyniki meczy
-            </NavLink>
-        </div>
+
+        @* W przypadku administratora *@
+        @if (isAdmin)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="seeder">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Dodaj mecze
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="seederBets">
+                    <span class="oi oi-cart" aria-hidden="true"></span> Dodaj zakłady
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="summarize">
+                    <span class="oi oi-graph" aria-hidden="true"></span> Podsumuj mecze
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="special-bets-settle">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Podsumuj typy specjalne
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="settle">
+                    <span class="oi oi-pencil" aria-hidden="true"></span> Wpisz wyniki meczy
+                </NavLink>
+            </div>
+        }
     </nav>
 </div>
 
+
 @code {
+    private bool isAdmin = false;
     private bool collapseNavMenu = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated ?? false)
+        {
+            var response = await Http.GetAsync("api/User/is-admin");
+
+            if (response.IsSuccessStatusCode)
+            {
+                isAdmin = await response.Content.ReadFromJsonAsync<bool>();
+            }
+        }
+    }
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
@@ -93,4 +112,5 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
 }

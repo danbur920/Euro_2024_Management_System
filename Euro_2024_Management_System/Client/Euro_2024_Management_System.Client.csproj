@@ -27,4 +27,10 @@
     <ProjectReference Include="..\Shared\Euro_2024_Management_System.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\SpecialBetsSettle.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
+
 </Project>

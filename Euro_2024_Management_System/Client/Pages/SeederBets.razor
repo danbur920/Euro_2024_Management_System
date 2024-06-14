@@ -8,26 +8,26 @@
 @inject HttpClient Http
 @attribute [Authorize]
 
-<h3>Wstaw mecz</h3>
+<div class="text-center">
+    <h3 class="mb-4">Wstaw mecz</h3>
 
-@if (Matches != null && Teams != null && Users != null)
-{
-    <div>
-        <button @onclick="()=> AddBets()">Dodaj zakłady jeśli nie istnieją</button>
-    </div>
-}
-else
-{
-    <p>Brak danych.</p>
-}
-
+    @if (Matches != null && Teams != null && Users != null)
+    {
+        <div>
+            <button class="btn btn-primary" @onclick="AddBets">Dodaj zakłady jeśli nie istnieją</button>
+        </div>
+    }
+    else
+    {
+        <p>Brak danych.</p>
+    }
+</div>
 
 @code {
     private List<Match> Matches = new List<Match>();
     private List<Team> Teams = new List<Team>();
     private List<Bet> Bets = new List<Bet>();
     private List<ApplicationUser> Users = new List<ApplicationUser>();
-
 
     protected override async Task OnInitializedAsync()
     {
@@ -46,10 +46,10 @@ else
             for (int j = 0; j < Matches.Count; j++)
             {
                 var matchId = Matches[j].Id;
-                var IsBetExists = Bets.Any(b => b.MatchId == matchId && b.UserId == userId);
+                var isBetExists = Bets.Any(b => b.MatchId == matchId && b.UserId == userId);
                 var newBet = new Bet() { MatchId = matchId, UserId = userId };
 
-                if(!IsBetExists)
+                if (!isBetExists)
                 {
                     var response = await Http.PostAsJsonAsync("api/bet", newBet);
                     count++;
@@ -62,20 +62,4 @@ else
         }
         Console.WriteLine($"Dodano {count} nowych zakładów :)");
     }
-
-    // private async Task HandleValidSubmit()
-    // {
-    //     newMatch.MatchTime = TimeSpan.Parse(matchTimeString);
-    //     var response = await Http.PostAsJsonAsync("api/match", newMatch);
-
-    //     if (response.IsSuccessStatusCode)
-    //     {
-    //         newMatch = new Match() { MatchDate = new DateTime(2024, 06, 15) };
-    //         StateHasChanged();
-    //     }
-    //     else
-    //     {
-    //         Console.WriteLine("Błąd podczas dodawania meczu");
-    //     }
-    // }
 }

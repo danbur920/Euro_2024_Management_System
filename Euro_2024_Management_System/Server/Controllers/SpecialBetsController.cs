@@ -58,7 +58,33 @@ namespace Euro_2024_Management_System.Server.Controllers
                 return BadRequest("ID zakładu w URL i w treści nie są zgodne.");
             }
 
-            bet.IsApproved = !bet.IsApproved;
+            bet.IsApproved = true;
+            _context.Entry(bet).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            return NoContent();
+        }
+
+        [HttpPut("userSpecialBetsSettle/{id}")]
+        public async Task<IActionResult> PutUserSpecialBetSettle(int id, UserSpecialBet bet)
+        {
+            if (id != bet.Id)
+            {
+                return BadRequest("ID zakładu w URL i w treści nie są zgodne.");
+            }
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == bet.ApplicationUserId);
+            user.Points += bet.Points;
+            bet.IsSettled = true;
+
+            _context.Entry(user).State=EntityState.Modified;
             _context.Entry(bet).State = EntityState.Modified;
 
             try

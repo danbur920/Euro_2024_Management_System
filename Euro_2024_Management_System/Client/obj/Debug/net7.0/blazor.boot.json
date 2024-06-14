@@ -1,7 +1,7 @@
 {
   "entryAssembly": "Euro_2024_Management_System.Client",
   "resources": {
-    "hash": "sha256-tS/iyfR6xbZidcVzEUiLjvTQe8BIGzPBouybBX+65sk=",
+    "hash": "sha256-hm8KHq0yY0PzoAhFu4qnep8bci+mpq4dX+1vbdNqQ+o=",
     "runtime": {
       "dotnet.7.0.19.yl9zqco4ji.js": "sha256-J9IVsSLjfEIyn/0XKSDWXHMve5eK11v9Aj06G7zPUYo=",
       "dotnet.timezones.blat": "sha256-kK6U8Vo/Xb8zgDH6JtdgAGSA6NUASHhvZoB+hINV0ms=",
@@ -232,12 +232,12 @@
       "mscorlib.dll": "sha256-lo3zWxda3c3QawbfHvOghgqCpdHXBTdqPT0UJceBT2A=",
       "netstandard.dll": "sha256-BvougKnccTedjRXZ+Ll94v1qqBt4cr0MqBVYFpGvYLA=",
       "System.Private.CoreLib.dll": "sha256-i0lh8QB6xhbEgqLyhh/0TaUFxAB3Iz2y0VH8m68TIdY=",
-      "Euro_2024_Management_System.Shared.dll": "sha256-grlBUy28Qij1YTgzzSJyvLn1Uaq9AdMDZfQvbNX8KBI=",
-      "Euro_2024_Management_System.Client.dll": "sha256-leHyxMj/asResVfovmpvSQ3BtujzNEKz3YuiFK78oWc="
+      "Euro_2024_Management_System.Shared.dll": "sha256-OjYo0ZP3BIyYi5EIaAPGrxcg5UHRJPUzZY+6IHe2PWI=",
+      "Euro_2024_Management_System.Client.dll": "sha256-2vDHn8Udu5dDGUqQIJiYLR+EwQJ4GRa8TdMXsZFBrRE="
     },
     "pdb": {
-      "Euro_2024_Management_System.Shared.pdb": "sha256-HcMbiB+k+xAh2knCCCxOrGl0RKGOFcYj0niLo+V5gtQ=",
-      "Euro_2024_Management_System.Client.pdb": "sha256-DmRgK/XGqozqauyIOpyHizTVFIVXsY9Oe/X8knTUXz4="
+      "Euro_2024_Management_System.Shared.pdb": "sha256-tT+tMqvDS9Qt6XzB3SyVIVNVL68uuuSVMiCNn1n/EFk=",
+      "Euro_2024_Management_System.Client.pdb": "sha256-WZziLdl643fxY7crSPwtOSy8IKZ7QmhDsEOivWqZIfo="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

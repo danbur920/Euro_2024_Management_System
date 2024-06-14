@@ -38,6 +38,8 @@ builder.Services.AddAuthorization(options =>
 builder.Services.AddScoped<UserManager<ApplicationUser>>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
 
+
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
@@ -49,6 +51,83 @@ using (var scope = app.Services.CreateScope())
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
     SeedRoles.Initialize(userManager, roleManager).Wait();
+}
+
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    try
+    {
+        string roleName = "Admin";
+
+        // Sprawdzamy, czy rola ju¿ istnieje
+        var roleExists = await roleManager.RoleExistsAsync(roleName);
+
+        if (!roleExists)
+        {
+            // Tworzymy now¹ rolê
+            var roleResult = await roleManager.CreateAsync(new IdentityRole(roleName));
+
+            if (roleResult.Succeeded)
+            {
+                Console.WriteLine($"Utworzono now¹ rolê: {roleName}");
+            }
+            else
+            {
+                Console.WriteLine($"B³¹d podczas tworzenia roli: {roleName}");
+                foreach (var error in roleResult.Errors)
+                {
+                    Console.WriteLine($"Error: {error.Description}");
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine($"Rola {roleName} ju¿ istnieje.");
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Wyst¹pi³ b³¹d podczas tworzenia roli: {ex.Message}");
+    }
+}
+
+// Inicjalizacja danych
+using (var scope = app.Services.CreateScope())
+{
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+    try
+    {
+        var userId = "09ccc57d-efe2-42c8-9365-bdbc109980c8"; 
+        var user = await userManager.FindByIdAsync(userId);
+
+        if (user != null)
+        {
+            // Sprawdzamy, czy u¿ytkownik ma ju¿ rolê Admin
+            var isAdmin = await userManager.IsInRoleAsync(user, "Admin");
+
+            if (!isAdmin)
+            {
+                // Dodawanie roli Admin
+                await userManager.AddToRoleAsync(user, "Admin");
+            }
+            else
+            {
+                Console.WriteLine("U¿ytkownik ju¿ posiada rolê Admin.");
+            }
+        }
+        else
+        {
+            Console.WriteLine($"Nie mo¿na znaleŸæ u¿ytkownika o ID: {userId}");
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Wyst¹pi³ b³¹d podczas przypisywania roli Admin: {ex.Message}");
+    }
 }
 
 // Configure the HTTP request pipeline.

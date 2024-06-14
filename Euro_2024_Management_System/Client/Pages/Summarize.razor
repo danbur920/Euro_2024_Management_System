@@ -5,11 +5,16 @@
 @using Microsoft.AspNetCore.Identity
 @inject HttpClient Http
 @attribute [Authorize]
-<h3>Summarize</h3>
 
-<button class="btn btn-primary" @onclick="SummarizeBets">Podsumuj</button>
+<div class="text-center">
+    <h3 class="mb-4">Summarize</h3>
 
-<span>@(state ? "Zakończono aktualizację" : "Zaktualizuj")</span>
+    <button class="btn btn-primary mb-3" @onclick="SummarizeBets">Podsumuj</button>
+
+    <div>
+        <span>@(state ? "Zakończono aktualizację" : "Zaktualizuj")</span>
+    </div>
+</div>
 
 @code {
     private bool state = false;
@@ -25,6 +30,3 @@
         }
     }
 }
-
-
-@* Ten widok służy do podsumowywania zakładów - > dodawania punktów graczom *@

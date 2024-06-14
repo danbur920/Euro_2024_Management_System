@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace Euro_2024_Management_System.Server.Controllers
 {
@@ -49,6 +50,20 @@ namespace Euro_2024_Management_System.Server.Controllers
         //    }
         //    return BadRequest(result.Errors);
         //}
+
+        [HttpGet("is-admin")]
+        public async Task<IActionResult> IsAdmin()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // This way because Roles not working :(
+            if (userId == "09ccc57d-efe2-42c8-9365-bdbc109980c8")
+            {
+                return Ok(true);
+            }
+
+            return Ok(false);
+        }
 
         [HttpPost]
         public async Task<IActionResult> UpdateUser(ApplicationUser updatedUser)

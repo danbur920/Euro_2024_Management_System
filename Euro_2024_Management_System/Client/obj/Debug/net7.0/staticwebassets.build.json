@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KAjhqlbC/QicICXGsnTzLoZg/E8LUQnjl20sHvDS9wM=",
+  "Hash": "e8xd3HhKboBr1e+dYJSk7c+pnlswzibOd9bMgxd5xG8=",
   "Source": "Euro_2024_Management_System.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -9230,6 +9230,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\images\\start.jpg",
+      "SourceId": "Euro_2024_Management_System.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/start.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\start.jpg"
     },
     {
       "Identity": "C:\\Users\\danbu\\Desktop\\Projekt _ Euro 2024 Management\\Euro_2024_Management_System\\Euro_2024_Management_System\\Client\\wwwroot\\index.html",

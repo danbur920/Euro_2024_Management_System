@@ -1,4 +1,4 @@
-﻿@page "/specialbets"
+﻿@page "/special-bets-settle"
 @inject HttpClient Http
 @using Euro_2024_Management_System.Shared.Models
 @using Microsoft.AspNetCore.Authorization
@@ -18,40 +18,44 @@ else
     <table class="table table-striped">
         <thead>
             <tr>
+                <th>Użytkownik</th>
                 <th>Tytuł Zakładu</th>
                 <th>Typ Użytkownika</th>
                 <th>Zatwierdzony</th>
                 <th>Rozliczony</th>
-                <th>Dodaj Swój Typ</th>
+                <th>Wpisz punkty za typ:</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var bet in specialBets)
+            @foreach (var userBet in userSpecialBets)
             {
                 <tr>
-                    <td>@bet.Title</td>
-                    <td>@GetUserBet(bet.Id)</td>
-                    <td>@IsApproved(bet.Id)</td>
-                    <td>@IsSettled(bet.Id)</td>
+                    <td>@userBet.ApplicationUserId</td>
+                    <td>@ReturnTitle((int)userBet.SpecialBetId)</td>
+                    <td>@userBet.UserBet</td>
+                    <td>@IsApproved(userBet.Id)</td>
+                    <td>@IsSettled(userBet.Id)</td>
                     <td>
-                        @if (!IsSettledBool(bet.Id))
+                        @if (!IsSettledBool(userBet.Id) && userBet.IsApproved == true)
                         {
-                            <EditForm Model="returnSpecialUserBet(bet)" OnValidSubmit="() => HandleValidSubmit(returnSpecialUserBet(bet))">
+                            <EditForm Model="userBet" OnValidSubmit="() => HandleValidSubmit(userBet)">
                                 <DataAnnotationsValidator />
                                 <ValidationSummary />
-                                <InputText @bind-Value="returnSpecialUserBet(bet).UserBet" placeholder="Wprowadź swój typ" />
+
+                                <InputNumber @bind-Value="returnSpecialUserBet(userBet.Id).Points" placeholder="Wprowadź punkty" />
+
                                 <button class="btn btn-primary" type="submit">
                                     Zatwierdź
                                 </button>
                             </EditForm>
                         }
-                        else if(returnSpecialUserBet(bet).IsSettled == true && returnSpecialUserBet(bet).IsApproved == false)
+                        else if (userBet.IsSettled == true && userBet.IsApproved == false)
                         {
                             <span>Zakład rozliczono - brak typu</span>
                         }
-                        else if(returnSpecialUserBet(bet).IsSettled == true && returnSpecialUserBet(bet).IsApproved == true)
+                        else if (userBet.IsSettled == true && userBet.IsApproved == true)
                         {
-                            <span>Zdobyłeś: @returnSpecialUserBet(bet).Points pkt</span>
+                            <span>Zakład rozliczono. Zdobyto: @userBet.Points pkt</span>
                         }
                     </td>
                 </tr>
@@ -67,47 +71,47 @@ else
     protected override async Task OnInitializedAsync()
     {
         specialBets = await Http.GetFromJsonAsync<SpecialBet[]>("api/SpecialBets/specialBets");
-        userSpecialBets = await Http.GetFromJsonAsync<UserSpecialBet[]>("api/SpecialBets/userSpecialBetsByLoggedUser");
+        userSpecialBets = await Http.GetFromJsonAsync<UserSpecialBet[]>("api/SpecialBets/userSpecialBets");
     }
 
-    private UserSpecialBet returnSpecialUserBet(SpecialBet bet)
+    private UserSpecialBet returnSpecialUserBet(int specialBetId)
     {
-        return userSpecialBets.FirstOrDefault(x => x.SpecialBetId == bet.Id);
+        return userSpecialBets.FirstOrDefault(x => x.Id == specialBetId);
     }
 
-    private string GetUserBet(int specialBetId)
+    private string ReturnTitle(int specialBetId)
     {
-        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
-        return userBet?.UserBet ?? "Brak typu";
+        var betTitle = specialBets.FirstOrDefault(x => x.Id == specialBetId);
+        return betTitle.Title;
     }
 
     private string IsApproved(int specialBetId)
     {
-        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
+        var userBet = userSpecialBets.FirstOrDefault(x => x.Id == specialBetId);
         return userBet?.IsApproved ?? false ? "Tak" : "Nie";
     }
 
     private string IsSettled(int specialBetId)
     {
-        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
+        var userBet = userSpecialBets.FirstOrDefault(x => x.Id == specialBetId);
         return userBet?.IsSettled ?? false ? "Tak" : "Nie";
     }
 
     private bool IsSettledBool(int specialBetId)
     {
-        var userBet = userSpecialBets.FirstOrDefault(x => x.SpecialBetId == specialBetId);
-        return userBet?.IsSettled ?? false;
+        var userBet = userSpecialBets.FirstOrDefault(x => x.Id == specialBetId);
+        return userBet.IsSettled;
     }
 
     private async Task HandleValidSubmit(UserSpecialBet userBet)
     {
-        if (userBet != null && !string.IsNullOrEmpty(userBet.UserBet))
+        if (true)
         {
-            var response = await Http.PutAsJsonAsync($"api/SpecialBets/userSpecialBets/{userBet.Id}", userBet);
+            var response = await Http.PutAsJsonAsync($"api/SpecialBets/userSpecialBetsSettle/{userBet.Id}", userBet);
 
             if (response.IsSuccessStatusCode)
             {
-                userSpecialBets = await Http.GetFromJsonAsync<UserSpecialBet[]>("api/SpecialBets/userSpecialBetsByLoggedUser");
+                userSpecialBets = await Http.GetFromJsonAsync<UserSpecialBet[]>("api/SpecialBets/userSpecialBets");
                 StateHasChanged();
             }
             else
